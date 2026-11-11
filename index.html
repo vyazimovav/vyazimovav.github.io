@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Виктория Вязимова — сайты и ИИ-агенты</title>
+<link rel="icon" href="img/favicon-vv.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-vv.png">
+<meta name="description" content="Сайты и ИИ-агенты: клиент сразу понимает, почему именно вы, ИИ-агент отвечает ему в любое время, а заявка приходит вам в Telegram.">
+<meta property="og:title" content="Виктория Вязимова — сайты и ИИ-агенты">
+<meta property="og:description" content="Сайт, который приводит клиентов, пока вы заняты делом.">
+<meta property="og:image" content="https://vyazimovav.github.io/img/og.jpg">
+<meta property="og:url" content="https://vyazimovav.github.io/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://vyazimovav.github.io/">
+<link rel="preload" href="fonts/oswald-cyrillic-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope-cyrillic-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="./"><span class="mono" aria-hidden="true"><b>В</b><i></i><b>В</b></span><span class="logo-txt">Виктория Вязимова<small>сайты и ИИ-агенты</small></span></a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#choose">Что делаю</a>
+    <a href="#works">Работы</a>
+    <a href="#services">Цены</a>
+    <a href="#how">Как работаю</a>
+    <a href="#faq">Вопросы</a>
+  </nav>
+  <a class="btn btn-small" href="https://t.me/vasyntx?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%8F%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D1%81%D0%B0%D0%B9%D1%82.%20%D0%AF%20%D0%B7%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%8E%D1%81%D1%8C%20%E2%80%A6" target="_blank" rel="noopener">Написать в Telegram</a>
+</header>
+
+<main>
+  <!-- Первый экран — круг 9 (тёмно-винная панель, светлый ореол, Oswald заглавными, акцент контуром) + круг 10 (Вика 12.11):
+       текст меньше и без перегруза влево, «сайты и ИИ-агенты» сразу; вокруг фото — орбиты с огоньками (за Викой), ореол дышит, звёзды, уведомление о заявке -->
+  <section class="first" id="top">
+    <div class="fx-bg" data-fx="stars" aria-hidden="true"><div class="torch"></div></div>
+    <div class="first-in">
+      <div class="first-copy">
+        <h1 class="first-title">Сайт, который <span class="hl">приводит клиентов</span>, пока вы заняты делом</h1>
+        <p class="first-lead">Создаю сайты и ИИ-агентов. Клиент сразу понимает, почему именно вы, ИИ-агент отвечает ему в любое время, а заявка приходит вам в Telegram.</p>
+        <div class="first-btns">
+          <a class="btn btn-light" href="https://t.me/vasyntx?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%8F%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D1%81%D0%B0%D0%B9%D1%82.%20%D0%AF%20%D0%B7%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%8E%D1%81%D1%8C%20%E2%80%A6" target="_blank" rel="noopener">Написать в Telegram</a>
+          <a class="btn btn-line" href="#works">Смотреть работы</a>
+        </div>
+      </div>
+      <div class="first-art">
+        <figure class="first-photo">
+          <!-- орбиты — <path>, не <ellipse> (урок 11.11: animateMotion едет только по path); у каждого огонька хвост из трёх точек -->
+          <svg class="first-orbits" viewBox="0 0 600 600" aria-hidden="true">
+            <defs><radialGradient id="spark-glow"><stop offset="0" stop-color="#fff1df" stop-opacity=".95"/><stop offset=".4" stop-color="#ead9c3" stop-opacity=".32"/><stop offset="1" stop-color="#ead9c3" stop-opacity="0"/></radialGradient></defs>
+            <g transform="rotate(-14 300 300)">
+              <path id="orb-a" d="M10 300a290 112 0 1 0 580 0a290 112 0 1 0-580 0"/>
+              <circle class="spark glow" r="16"><animateMotion dur="12s" repeatCount="indefinite"><mpath href="#orb-a"/></animateMotion></circle>
+              <circle class="spark" r="4.2"><animateMotion dur="12s" repeatCount="indefinite"><mpath href="#orb-a"/></animateMotion></circle>
+              <circle class="spark tail" r="3"><animateMotion dur="12s" begin="-.14s" repeatCount="indefinite"><mpath href="#orb-a"/></animateMotion></circle>
+              <circle class="spark tail t2" r="2.2"><animateMotion dur="12s" begin="-.28s" repeatCount="indefinite"><mpath href="#orb-a"/></animateMotion></circle>
+              <circle class="spark tail t3" r="1.5"><animateMotion dur="12s" begin="-.42s" repeatCount="indefinite"><mpath href="#orb-a"/></animateMotion></circle>
+              <circle class="spark dim" r="3"><animateMotion dur="12s" begin="-6s" repeatCount="indefinite"><mpath href="#orb-a"/></animateMotion></circle>
+            </g>
+            <g transform="rotate(22 300 300)">
+              <path id="orb-b" d="M48 300a252 176 0 1 0 504 0a252 176 0 1 0-504 0"/>
+              <circle class="spark glow" r="13"><animateMotion dur="17s" begin="-4s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#orb-b"/></animateMotion></circle>
+              <circle class="spark" r="3.6"><animateMotion dur="17s" begin="-4s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#orb-b"/></animateMotion></circle>
+              <circle class="spark tail" r="2.6"><animateMotion dur="17s" begin="-4.18s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#orb-b"/></animateMotion></circle>
+              <circle class="spark tail t2" r="1.8"><animateMotion dur="17s" begin="-4.36s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#orb-b"/></animateMotion></circle>
+            </g>
+          </svg>
+          <img src="img/viktoria.webp" srcset="img/viktoria-680.webp 680w, img/viktoria.webp 1000w" sizes="(max-width: 899px) 320px, 600px" width="1000" height="1143" alt="Виктория Вязимова" fetchpriority="high">
+          <figcaption class="first-name"><b>Виктория Вязимова</b>сайты и ИИ-агенты</figcaption>
+          <div class="first-tg" aria-hidden="true"><div class="tg-card">
+            <span class="tg-ico"><svg viewBox="0 0 24 24"><path d="M21 4 3 11l6 2 2 6 3-4 5 4 2-15z M9 13l9-6-6 8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span>
+            <div><small>Telegram, сейчас</small><b id="tg-t">Новая заявка с сайта</b><span id="tg-s">Кухня на заказ, замер в субботу</span></div>
+          </div></div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Боли — круг 8, вернули в круге 10 (Вика 12.11): про отсутствие понятной ссылки; переписка появляется по сообщению, когда до неё долистали -->
+  <section class="pains" id="pains">
+    <div class="pains-text">
+      <h2>Спросили цену и&nbsp;пропали</h2>
+      <p class="lead">Так бывает, когда всё о вас разбросано по чатам и соцсетям, а одной понятной ссылки нет.</p>
+    </div>
+    <div class="pain-chat" role="img" aria-label="Пример переписки: клиент спрашивает цену и работы, ответы приходят через несколько часов, и клиент перестаёт отвечать">
+      <div class="pc-head"><span class="pc-ava">А</span><div><b>Анна</b><small>ВКонтакте, сообщения</small></div></div>
+      <div class="pc-body">
+        <p class="pc in">Здравствуйте! Сколько стоит?<time>14:02</time></p>
+        <p class="pc out">Добрый день! Зависит от задачи. Расскажите, что нужно?<time>15:47</time></p>
+        <p class="pc in">А работы где-то можно посмотреть?<time>15:50</time></p>
+        <p class="pc out">Сейчас поищу фото и пришлю<time>19:30</time></p>
+        <p class="pc in">Спасибо, я подумаю<time>19:34</time></p>
+        <p class="pc sys">Анна больше не ответила</p>
+      </div>
+    </div>
+    <ul class="pain-items">
+      <li><b>Каждый день одни и те же вопросы</b><span>Сколько стоит, где вы находитесь, можно ли посмотреть работы. Пока вы отвечаете, клиент пишет тем, у кого всё видно сразу.</span></li>
+      <li><b>Работы не собраны в одном месте</b><span>Фото в сторис, в переписках, в галерее телефона. Отправить одной ссылкой нечего, и клиент не видит, что вы умеете.</span></li>
+      <li><b>Новый клиент вас пока не знает</b><span>Сарафан приводит тех, кому вас посоветовали. Остальным, чтобы решиться написать, нужно увидеть цены, работы и отзывы.</span></li>
+    </ul>
+    <p class="pain-close">Сайт отвечает на эти вопросы раньше, чем их зададут.</p>
+  </section>
+
+  <!-- Две карточки «что важнее» (задание 11.11): сайты главные, дополнения — второй шаг.
+       Круг 11 (Вика 12.11: «вариант с сайтом выделить, агенты переманивают»): «Сайты и лендинги» — тёмная, со светом по рамке и сменой работ;
+       «Дополнения» — светлая, ночная сцена снова внутри неё (в своём тёмном окне) -->
+  <section class="choose" id="choose">
+    <div class="choose-head">
+      <h2>Клиентов теряют в двух местах: до первого сообщения и после</h2>
+      <p>Выберите, что важнее сейчас.</p>
+    </div>
+    <div class="choose-grid">
+      <article class="ch-card ch-site">
+        <h3 class="ch-title">Сайты и лендинги</h3>
+        <p class="ch-quote">Вас выбирают ещё до разговора.</p>
+        <p class="ch-text">Сайт показывает работы и цены, объясняет, чем вы лучше других, и отвечает на главные вопросы. Человек пишет, когда уже решил.</p>
+        <a class="ch-visual" href="#works" aria-label="Смотреть работы">
+          <span class="ch-slide on"><img class="shot-laptop" src="img/case-dmitry-laptop.webp" width="1100" height="618" alt=""><img class="shot-phone" src="img/case-dmitry-phone.webp" width="390" height="844" alt=""></span>
+          <span class="ch-slide"><img class="shot-laptop" src="img/case-olga-laptop.webp" width="1100" height="618" alt=""><img class="shot-phone" src="img/case-olga-phone.webp" width="390" height="844" alt=""></span>
+          <span class="ch-slide"><img class="shot-laptop" src="img/case-mera-laptop.webp" width="1100" height="618" alt=""><img class="shot-phone" src="img/case-mera-phone.webp" width="390" height="844" alt=""></span>
+        </a>
+        <div class="ch-pick">
+          <span class="ch-dots" aria-hidden="true"><i class="on"></i><i></i><i></i></span>
+          <span class="ch-cap" id="ch-cap">Мебель на заказ: сайт с квизом</span>
+        </div>
+        <a class="btn btn-light" href="https://t.me/vasyntx?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%8F%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%82%D0%B0%D0%BA%D0%BE%D0%B9%20%D1%81%D0%B0%D0%B9%D1%82.%20%D0%AF%20%D0%B7%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%8E%D1%81%D1%8C%20%E2%80%A6" target="_blank" rel="noopener">Хочу такой сайт</a>
+      </article>
+      <article class="ch-card ch-add">
+        <h3 class="ch-title">Дополнения к сайту</h3>
+        <p class="ch-quote">Ни одна заявка не теряется.</p>
+        <p class="ch-text">Заявка сразу приходит вам в Telegram, квиз сам считает цену, ИИ-агент отвечает на частые вопросы.</p>
+        <!-- ночная сцена (круг 5а) — снова здесь (Вика 12.11), с пометкой «пример»; на телефоне без шара и звёзд -->
+        <div class="vh-stage" id="vh-stage" aria-hidden="true">
+          <div class="vh-stars" id="vh-stars"></div>
+          <div class="vh-glow"></div><div class="vh-orbit"></div>
+          <div class="vh-orbwrap" id="vh-orbwrap"><div class="vh-orb"></div><i class="vh-ring"></i><i class="vh-ring"></i><i class="vh-ring"></i></div>
+          <div class="vh-wave"></div>
+          <div class="vh-label">Пример</div>
+          <div class="vh-feed" id="vh-feed"></div>
+          <div class="vh-phone"><div class="vh-lock" id="vh-lock">
+            <span class="holo-dot vh-moon"></span>
+            <div class="vh-day" id="vh-day">суббота</div>
+            <div class="vh-time" id="vh-clock">23:52</div>
+            <div class="vh-zz">Режим сна, ИИ на связи</div>
+            <div class="vh-notes" id="vh-notes"></div>
+          </div></div>
+        </div>
+        <a class="btn btn-ghost" href="#services">Что можно добавить</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="works" id="works">
+    <h2>Работы</h2>
+    <p class="lead">Сайты открываются по-настоящему: можно пройти квиз, нажать кнопки записи и написать консультанту.</p>
+    <div class="work-grid">
+      <article class="work">
+        <a class="work-shot" href="cases/dmitry/landing.html" target="_blank" rel="noopener" tabindex="-1">
+          <img class="shot-laptop" src="img/case-dmitry-laptop.webp" alt="Сайт мастера корпусной мебели на ноутбуке" loading="lazy" width="1100" height="618">
+          <img class="shot-phone" src="img/case-dmitry-phone.webp" alt="Тот же сайт на телефоне" loading="lazy" width="390" height="844">
+        </a>
+        <p class="work-tag">Корпусная мебель на заказ</p>
+        <h3>«Сделано Хорошо»: сайт с квизом-калькулятором</h3>
+        <p>Клиент отвечает на пару вопросов о кухне и сразу видит примерную цену, а мастеру приходит заявка на замер.</p>
+        <a class="link" href="cases/dmitry/landing.html" target="_blank" rel="noopener">Открыть сайт</a>
+      </article>
+      <article class="work">
+        <a class="work-shot" href="cases/olga/landing.html" target="_blank" rel="noopener" tabindex="-1">
+          <img class="shot-laptop" src="img/case-olga-laptop.webp" alt="Сайт массажиста на ноутбуке" loading="lazy" width="1100" height="618">
+          <img class="shot-phone" src="img/case-olga-phone.webp" alt="Тот же сайт на телефоне" loading="lazy" width="390" height="844">
+        </a>
+        <p class="work-tag">Массаж и мадеротерапия</p>
+        <h3>Сайт-визитка массажиста</h3>
+        <p>Услуги, цены и запись на одной странице. Клиенту не нужно ничего уточнять в переписке.</p>
+        <a class="link" href="cases/olga/landing.html" target="_blank" rel="noopener">Открыть сайт</a>
+      </article>
+      <article class="work">
+        <a class="work-shot" href="cases/mera/index.html" target="_blank" rel="noopener" tabindex="-1">
+          <img class="shot-laptop" src="img/case-mera-laptop.webp" alt="Сайт клиники «Мера» на ноутбуке" loading="lazy" width="1100" height="618">
+          <img class="shot-phone" src="img/case-mera-phone.webp" alt="ИИ-консультант клиники на телефоне" loading="lazy" width="390" height="844">
+        </a>
+        <p class="work-tag">Клиника эстетической медицины <span class="badge">демо-проект</span></p>
+        <h3>«Мера»: сайт с ИИ-консультантом</h3>
+        <p>Консультант отвечает на вопросы о процедурах и записывает на приём. Кнопка «Глазами клиники» показывает, что в это время видит владелец.</p>
+        <a class="link" href="cases/mera/index.html" target="_blank" rel="noopener">Открыть сайт</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Услуги и цены — один блок, цены один раз (круг 4). Цифры — прайс Джарвиса, утверждён Викой 08.11 (../jarvis/knowledge/price-list.md). Ежемесячную плату за ИИ не называем до расчёта (круг 4). -->
+  <section class="svc fx-sec" id="services">
+    <canvas class="fx-bg" data-fx="links" aria-hidden="true"></canvas>
+    <h2>Услуги и цены</h2>
+    <p class="lead">Каждую услугу можно заказать отдельно или вместе с сайтом. Цена «от» указана за базовый объём, точную назову, когда посмотрю ваше дело.</p>
+    <div class="svc-grid">
+      <!-- круг 11: «Сайт» — главная плашка (тёмная, орбита с огоньком как у фото), дополнения — светлые, у каждого свой значок -->
+      <article class="svc-card svc-site">
+        <svg class="svc-orbit" viewBox="0 0 400 200" aria-hidden="true">
+          <g transform="rotate(-10 200 100)">
+            <path id="orb-s" d="M10 100a190 70 0 1 0 380 0a190 70 0 1 0-380 0"/>
+            <circle class="spark glow" r="12"><animateMotion dur="14s" repeatCount="indefinite"><mpath href="#orb-s"/></animateMotion></circle>
+            <circle class="spark" r="3.2"><animateMotion dur="14s" repeatCount="indefinite"><mpath href="#orb-s"/></animateMotion></circle>
+            <circle class="spark tail" r="2.2"><animateMotion dur="14s" begin="-.18s" repeatCount="indefinite"><mpath href="#orb-s"/></animateMotion></circle>
+          </g>
+        </svg>
+        <h3>Сайт</h3>
+        <p class="gain">Одна ссылка, по которой клиент понимает, что вы делаете, и записывается</p>
+        <ul class="site-plans">
+          <li><b>Визитка</b><span>Одна страница: услуги, цены, кнопки связи. 1–2 дня</span><i>7 000 ₽</i></li>
+          <li><b>Лендинг</b><span>Плюс форма заявок с уведомлением, фото работ, отзывы, карта. 2–3 дня</span><i>от 15 000 ₽</i></li>
+          <li><b>Под ключ</b><span>Плюс тексты, дизайн на выбор, домен, настройка для Яндекса, 14 дней правок. 3–5 дней</span><i>от 25 000 ₽</i></li>
+        </ul>
+      </article>
+      <h3 class="svc-add">Можно добавить к сайту</h3>
+      <article class="svc-card svc-row svc-leads">
+        <h3><span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 4 3 11l6 2 2 6 3-4 5 4 2-15z M9 13l9-6-6 8"/></svg></span>Автоматизация заявок</h3>
+        <p class="gain">Ни одна заявка не теряется</p>
+        <p>Вам — сообщение о новой заявке, клиенту — ответ, что заявка получена. За день до визита — напоминание.</p>
+        <p class="svc-price">от 10 000 ₽</p>
+      </article>
+      <article class="svc-card svc-row svc-ai">
+        <h3><span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z M12 7.6l.8 1.9 1.9.8-1.9.8-.8 1.9-.8-1.9-1.9-.8 1.9-.8z"/></svg></span>ИИ-консультант на сайте</h3>
+        <p class="gain">Отвечает клиентам ночью и записывает, пока вы спите</p>
+        <p>Окно чата на вашем сайте. Отвечает о ценах, сроках и свободном времени по вашим материалам, сложные вопросы передаёт вам.</p>
+        <p class="svc-price">от 25 000 ₽<span>+ ежемесячная плата за работу ИИ — назову после расчёта</span></p>
+      </article>
+      <article class="svc-card svc-row svc-bot">
+        <h3><span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H8l-4 4z M8 8.5h8 M8 12h5"/></svg></span>Чат-бот в Telegram, ВК или Max</h3>
+        <p class="gain">Клиент записывается сам — в мессенджере, где ему удобно</p>
+        <p>Услуги, цены и свободное время — кнопками. Бот записывает и напоминает о визите.</p>
+        <p class="svc-price">от 25 000 ₽<span>+ ежемесячная плата за работу бота — назову после расчёта</span></p>
+      </article>
+      <article class="svc-card svc-row svc-quiz">
+        <h3><span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h4m4 0h8 M4 12h10m4 0h2 M4 17h6m4 0h6"/><circle cx="10" cy="7" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="12" cy="17" r="2"/></svg></span>Квиз-калькулятор</h3>
+        <p class="gain">Клиент сам узнаёт цену за минуту и оставляет телефон</p>
+        <p>Несколько вопросов на сайте — и примерная цена. Так сделано у Дмитрия: кухня, размер, фасады.</p>
+        <p class="svc-price">от 7 000 ₽</p>
+      </article>
+      <article class="svc-card svc-row svc-care">
+        <h3><span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z M13.5 6.5l4 4"/></svg></span>Поддержка сайта</h3>
+        <p class="gain">Новые цены и фото — без вашего участия</p>
+        <p>Присылаете в Telegram, что поменять, — я обновляю сайт.</p>
+        <p class="svc-price">2–5 тыс. ₽ в месяц</p>
+      </article>
+    </div>
+    <ul class="deal">
+      <li><b>Сначала покажу первый экран вашего сайта.</b> Если понравится, вносите 50% предоплаты, остальное после сдачи. Если нет, ничего не платите.</li>
+      <li><b>Отдельно оплачиваются только домен и хостинг.</b> Примерно 1–4 тысячи рублей в год. Оформляю их на вас, поэтому сайт и доступы остаются вашими.</li>
+      <li><b>Первым клиентам скидка 20%.</b> За отзыв и разрешение показать работу в портфолио.</li>
+    </ul>
+    <p class="fine">Информация на сайте не является публичной офертой.</p>
+  </section>
+
+  <!-- Как работаю — ночная полоса со звёздами и фонариком (любимый фон Вики № 10), вернули в круге 8; линия шагов прорисовывается, когда блок виден -->
+  <section class="how fx-sec night grain" id="how">
+    <div class="fx-bg" data-fx="stars" aria-hidden="true"><div class="torch"></div></div>
+    <h2>Как работаю</h2>
+    <ol class="steps">
+      <li><b>Вы пишете в Telegram</b><span>Расскажите, чем занимаетесь, и пришлите ссылку на ВК, карты или старый сайт.</span></li>
+      <li><b>Я показываю первый экран</b><span>Собираю первый экран вашего сайта до оплаты. Если не понравится, вы ничего не должны.</span></li>
+      <li><b>Делаю сайт</b><span>После предоплаты 50% собираю остальное. Цена и срок не меняются, правки вношу по ходу.</span></li>
+      <li><b>Запускаю</b><span>Вторые 50% платите после сдачи. Сайт, домен и доступы оформлены на вас.</span></li>
+    </ol>
+    <ul class="trust">
+      <li>Пишете мне напрямую, без менеджеров</li>
+      <li>Заявки хранятся по закону о персональных данных</li>
+      <li>Самозанятая, чек на каждую оплату</li>
+    </ul>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="faq-side">
+      <h2>Вопросы</h2>
+      <p>Не нашли свой вопрос? Напишите, отвечу сама.</p>
+      <a class="link" href="https://t.me/vasyntx" target="_blank" rel="noopener">Написать в Telegram</a>
+    </div>
+    <div class="faq-list">
+    <details>
+      <summary>Сколько времени займёт сайт?</summary>
+      <p>Визитку делаю за 1–2 дня, лендинг за 2–3, сайт под ключ за 3–5 дней. Срок считаю с момента, когда у меня есть ваши фото, цены и контакты.</p>
+    </details>
+    <details>
+      <summary>Что, если первый экран не понравится?</summary>
+      <p>Ничего не платите. Первый экран нужен, чтобы вы увидели свой сайт до решения.</p>
+    </details>
+    <details>
+      <summary>А если ИИ ответит клиенту что-то не то?</summary>
+      <p>Консультант отвечает только по вашим материалам: услуги, цены, расписание. Сложные вопросы и всё, чего нет в материалах, он передаёт вам.</p>
+    </details>
+    <details>
+      <summary>Что нужно от меня?</summary>
+      <p>Ответы на короткий список вопросов, фото работ, цены и контакты. Тексты могу написать сама.</p>
+    </details>
+    <details>
+      <summary>Кто платит за домен и хостинг?</summary>
+      <p>Вы, на своё имя. Так сайт остаётся вашей собственностью. Это примерно 1–4 тысячи в год, сумму назову до оплаты. Выбрать и подключить помогу.</p>
+    </details>
+    <details>
+      <summary>А закон о персональных данных?</summary>
+      <p>Заявки сохраняются на вашем российском хостинге, в Telegram приходит только уведомление без данных клиента. На сайте есть политика и согласие. Делаю это сразу и без доплат.</p>
+    </details>
+    </div>
+  </section>
+
+  <section class="final grain" id="contact">
+    <div class="fx-bg" aria-hidden="true"><div class="sheen"></div></div>
+    <div class="final-me" aria-hidden="true">
+      <!-- та же орбита с огоньком, что вокруг фото на первом экране: начало и конец страницы перекликаются -->
+      <svg class="fin-orbit" viewBox="0 0 200 200">
+        <g transform="rotate(-18 100 100)">
+          <path id="orb-f" d="M8 100a92 44 0 1 0 184 0a92 44 0 1 0-184 0"/>
+          <circle class="spark glow" r="10"><animateMotion dur="7s" repeatCount="indefinite"><mpath href="#orb-f"/></animateMotion></circle>
+          <circle class="spark" r="3"><animateMotion dur="7s" repeatCount="indefinite"><mpath href="#orb-f"/></animateMotion></circle>
+          <circle class="spark tail" r="2"><animateMotion dur="7s" begin="-.12s" repeatCount="indefinite"><mpath href="#orb-f"/></animateMotion></circle>
+          <circle class="spark tail t2" r="1.4"><animateMotion dur="7s" begin="-.24s" repeatCount="indefinite"><mpath href="#orb-f"/></animateMotion></circle>
+        </g>
+      </svg>
+      <img class="final-ava" src="img/viktoria-ava.webp" width="240" height="240" alt="" loading="lazy">
+    </div>
+    <h2>Покажу ваш сайт до оплаты</h2>
+    <p>Напишите, чем занимаетесь, и за 1–2 дня я пришлю первый экран вашего сайта. Не понравится — ничего не должны.</p>
+    <a class="btn btn-light" href="https://t.me/vasyntx?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%8F%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B4%D0%B5%D0%BC%D0%BE%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0.%20%D0%AF%20%D0%B7%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%8E%D1%81%D1%8C%20%E2%80%A6" target="_blank" rel="noopener">Написать в Telegram</a>
+    <p class="tg">Сообщение уже написано, просто отправьте</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <div class="foot-me">
+      <span class="mono mono-l" aria-hidden="true"><b>В</b><i></i><b>В</b></span>
+      <p><b>Виктория Вязимова</b>Сайты, лендинги и ИИ-агенты. Работаю онлайн с любым городом.</p>
+    </div>
+    <nav class="foot-nav" aria-label="Разделы">
+      <a href="#choose">Что делаю</a><a href="#works">Работы</a><a href="#services">Цены</a><a href="#how">Как работаю</a><a href="#faq">Вопросы</a>
+    </nav>
+    <div class="foot-legal">
+      <p>Telegram <a href="https://t.me/vasyntx">@vasyntx</a></p>
+      <p>Самозанятая (налог на профессиональный доход), ИНН 744844788870</p>
+      <p>Информация на сайте не является публичной офертой.</p>
+    </div>
+  </div>
+</footer>
+
+<a class="mob-bar" href="https://t.me/vasyntx?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%92%D0%B8%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%8F%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D1%81%D1%83%D0%B4%D0%B8%D1%82%D1%8C%20%D1%81%D0%B0%D0%B9%D1%82.%20%D0%AF%20%D0%B7%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%8E%D1%81%D1%8C%20%E2%80%A6" target="_blank" rel="noopener">Написать в Telegram</a>
+<script src="main.js"></script>
+</body>
+</html>

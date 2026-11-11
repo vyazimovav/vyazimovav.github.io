@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Златоустовская гравюра на стали — клинок в 3D (концепт)</title>
+<meta name="description" content="Концепт промо-сайта мастерской златоустовской гравюры: клинок в 3D проходит путь от эскиза до золота, разбирается на детали, а гравюру можно примерить.">
+<link rel="preload" href="fonts/forum-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="#">Златоуст</a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#scene">Ремесло</a>
+    <a href="#try">Примерить гравюру</a>
+  </nav>
+  <a class="btn btn-small" href="#order">Заказать клинок</a>
+</header>
+
+<main>
+  <section class="scene" id="scene" aria-label="Как рождается гравюра">
+    <div class="stage" id="stage">
+      <canvas id="gl" aria-label="Клинок с золотой гравюрой в 3D" role="img"></canvas>
+      <div class="labels" id="labels" aria-hidden="true"></div>
+
+      <div class="intro">
+        <h1>Сталь, на&nbsp;которой рисуют золотом</h1>
+        <p>Златоустовская гравюра на стали родилась на Урале в XIX веке. Синий клинок и золотой рисунок — её почерк.</p>
+        <p class="hint" aria-hidden="true">Ведите мышью — свет пойдёт по стали. Прокрутите — клинок пройдёт весь путь заново.</p>
+      </div>
+
+      <ol class="stages" id="stages">
+        <li><b>Эскиз</b><span>Мастер переносит рисунок на зеркальную сталь — тонкой линией, от руки.</span></li>
+        <li><b>Травление</b><span>Рисунок протравливают в металл — линии уходят вглубь.</span></li>
+        <li><b>Воронение</b><span>Клинок нагревают, и сталь темнеет до глубокого синего.</span></li>
+        <li><b>Золото</b><span>Рисунок покрывают золотом — и синий клинок загорается.</span></li>
+        <li><b>Из чего собран</b><span>Клинок, гарда, наборная рукоять и навершие — каждая деталь на своём месте.</span></li>
+      </ol>
+      <div class="ticks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+      <p class="outro">Синий клинок, золотой рисунок — почерк Златоуста.</p>
+      <p class="fallback">Ваш браузер не показывает 3D. Откройте страницу в свежем Chrome, Safari или Яндекс Браузере.</p>
+    </div>
+  </section>
+
+  <section class="try" id="try">
+    <h2>Примерьте гравюру</h2>
+    <p class="lead">Выберите сюжет — и он ляжет на клинок золотом. Ведите мышью над ножом, чтобы рассмотреть.</p>
+    <div class="tabs" role="tablist" aria-label="Сюжет гравюры">
+      <button role="tab" aria-selected="true" data-p="vine">Орнамент</button>
+      <button role="tab" aria-selected="false" data-p="mount">Уральские горы</button>
+      <button role="tab" aria-selected="false" data-p="name">Своя надпись</button>
+    </div>
+    <label class="name-field" id="name-field" hidden>Текст надписи
+      <input type="text" id="name-input" maxlength="26" value="На долгую память" autocomplete="off">
+    </label>
+    <div class="try-view"><canvas id="gl-try" aria-label="Клинок с выбранной гравюрой" role="img"></canvas></div>
+  </section>
+
+  <section class="craft">
+    <h2>Промысел с Урала</h2>
+    <div class="craft-cols">
+      <p>Гравюра на стали появилась в Златоусте в XIX веке, на оружейной фабрике. Клинки украшали сценами охоты, сражений и уральской природы.</p>
+      <p>Узнать её легко: глубокий синий цвет воронёной стали и тонкий золотой рисунок поверх. Каждую гравюру мастер ведёт вручную.</p>
+    </div>
+  </section>
+
+  <section class="order" id="order">
+    <h2>Закажите клинок с гравюрой</h2>
+    <p>Сюжет, надпись и форму клинка обсудим с мастером.</p>
+    <a class="btn" href="#">Обсудить заказ</a>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Концепт-сайт для портфолио студии. 3D-модель ножа условная, сюжеты и цены — мастерской.</p>
+</footer>
+
+<canvas class="sparks" id="sparks" aria-hidden="true"></canvas>
+<script src="knife3d.js"></script>
+</body>
+</html>

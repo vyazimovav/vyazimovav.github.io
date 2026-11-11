@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кухни и шкафы на заказ в Челябинске — «Сделано Хорошо», мастер Дмитрий Процюк</title>
+<link rel="icon" type="image/png" href="img/favicon.png">
+<meta name="description" content="Корпусная мебель на заказ в Челябинске и области: кухни, шкафы, гардеробные, прихожие, мебель для ванной и бизнеса. Работа напрямую с мастером, честная смета, выезд в другие города.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Кухни и шкафы на заказ в Челябинске — «Сделано Хорошо»">
+<meta property="og:description" content="Мебель по размерам вашего помещения напрямую от мастера. Расчёт стоимости бесплатно.">
+<meta property="og:image" content="og.jpg"><!-- при публикации: полный адрес https://домен/og.jpg -->
+<meta name="twitter:card" content="summary_large_image">
+<!-- Яндекс Метрика: вставить код счётчика сюда и указать номер в METRIKA_ID ниже -->
+<style>
+  :root{
+    --bg-1:#0a0807;
+    --bg-2:#141010;
+    --bg-3:#1f1712;
+    --gold-1:#f1d3a2;
+    --gold-2:#cf9f66;
+    --gold-3:#9c6a3a;
+    --text:#f2ece4;
+    --muted:#b0a395;
+    --card:rgba(255,255,255,.03);
+    --line:rgba(207,159,102,.24);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;background:#0a0807}
+  body{
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+    color:var(--text);
+    background:
+      radial-gradient(900px 520px at 50% 18%, rgba(207,159,102,.16), transparent 65%),
+      radial-gradient(700px 500px at 0% 60%, rgba(156,106,58,.10), transparent 60%),
+      linear-gradient(170deg,var(--bg-1) 0%,var(--bg-2) 50%,var(--bg-3) 100%);
+    min-height:100vh;line-height:1.6;overflow-x:hidden;
+  }
+  /* вертикальные швы фасадов, как на баннере */
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+    background:repeating-linear-gradient(90deg,transparent 0 170px,rgba(255,255,255,.022) 170px 171px);
+  }
+  .wrap{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:0 20px}
+
+  /* ---------- шапка ---------- */
+  header{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;padding:24px 0}
+  .logo{display:flex;align-items:center;gap:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;font-size:.82rem}
+  .logo-img{width:48px;height:48px;border-radius:50%;display:block;box-shadow:0 0 0 1px rgba(207,159,102,.25),0 6px 18px -6px rgba(0,0,0,.8)}
+  .logo span{color:var(--gold-1)}
+  .head-link{color:var(--muted);text-decoration:none;font-size:.9rem;letter-spacing:.06em;border-bottom:1px solid var(--line);transition:color .3s}
+  .head-link:hover{color:var(--gold-1)}
+
+  /* золотая линия с точкой */
+  .rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold-2) 20%,var(--gold-2) 80%,transparent);position:relative;margin:16px 0}
+  .rule::after{content:"";position:absolute;left:50%;top:50%;width:5px;height:5px;border-radius:50%;background:var(--gold-2);transform:translate(-50%,-50%)}
+
+  /* ---------- HERO ---------- */
+  .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:end;
+    min-height:min(calc(100vh - 82px),820px);padding:0;position:relative}
+  .hero-text{align-self:center;position:relative;z-index:2;padding-bottom:40px}
+  .eyebrow{font-size:clamp(.9rem,1.3vw,1.1rem);font-weight:300;letter-spacing:.42em;text-transform:uppercase;color:var(--muted)}
+  h1{
+    margin-top:14px;font-size:clamp(3.4rem,7.6vw,7rem);font-weight:200;letter-spacing:.06em;line-height:.95;text-transform:uppercase;
+    white-space:nowrap;display:inline-block;padding-right:.06em;
+    background:linear-gradient(100deg,var(--gold-3) 0%,var(--gold-1) 30%,var(--gold-2) 55%,var(--gold-1) 78%,var(--gold-3) 100%);
+    background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;
+    animation:shine 7s linear infinite;
+  }
+  @keyframes shine{to{background-position:200% center}}
+  .hero .rule{width:120px;margin:34px 0 30px;background:linear-gradient(90deg,var(--gold-2),transparent)}
+  .hero .rule::after{left:0}
+  .lead2{max-width:400px;color:var(--muted);font-size:clamp(1rem,1.4vw,1.15rem);line-height:1.75}
+  .lead2 b{color:var(--text);font-weight:400}
+  .hero-btn{margin-top:40px;animation:pulse 2.2s ease-out infinite}
+
+  .photo{position:relative;display:flex;justify-content:center;margin-right:-10px;padding-top:20px}
+  .photo::before{content:"";position:absolute;left:5%;right:0;top:18%;height:45%;
+    background:radial-gradient(closest-side,rgba(241,211,162,.2),transparent);filter:blur(14px)}
+  .photo img{position:relative;width:auto;max-width:100%;height:min(calc(100vh - 110px),740px);min-height:520px;object-fit:contain;display:block;
+    animation:rise 1.4s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes rise{from{opacity:0;transform:translateY(50px)}to{opacity:1;transform:none}}
+  /* фото-фон на компьютере: интерьер до краёв экрана */
+  .hero-bg{position:absolute;top:-82px;bottom:0;left:calc(50% - 50vw);width:100vw;z-index:0;overflow:hidden;pointer-events:none}
+  .hero-bg .blur{position:absolute;inset:-60px;background-size:cover;background-position:center 30%;
+    filter:blur(34px) brightness(.32) saturate(.85);transform:scale(1.1)}
+  .hero-bg img{position:absolute;right:0;top:0;height:100%;width:min(60%,960px);object-fit:cover;object-position:50% 16%;
+    filter:brightness(.88) contrast(1.04) saturate(.95);
+    -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 38%);mask-image:linear-gradient(90deg,transparent 0,#000 38%);
+    animation:bgin 1.8s ease both}
+  @keyframes bgin{from{opacity:0;transform:scale(1.04)}to{opacity:1;transform:none}}
+  .hero-bg::after{content:"";position:absolute;inset:0;background:
+    linear-gradient(90deg,var(--bg-1) 0%,rgba(10,8,7,.94) 28%,rgba(10,8,7,.55) 46%,rgba(10,8,7,.08) 66%,transparent 80%),
+    linear-gradient(to top,var(--bg-1) 0,rgba(10,8,7,.6) 12%,transparent 30%),
+    linear-gradient(to bottom,rgba(10,8,7,.75) 0,transparent 16%)}
+  .caption{position:absolute;right:0;bottom:64px;z-index:2;text-align:right;padding-right:4px}
+  .caption b{display:block;font-weight:300;font-size:1.45rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-1)}
+  .caption span{display:block;margin-top:6px;font-size:.74rem;letter-spacing:.32em;text-transform:uppercase;color:var(--text);opacity:.75}
+  .caption::before{content:"";display:block;width:60px;height:1px;margin:0 0 14px auto;background:linear-gradient(90deg,transparent,var(--gold-2))}
+  @media (min-width:901px){ .photo{display:none} }
+
+  .scroll{position:absolute;left:0;bottom:26px;display:flex;align-items:center;gap:14px;
+    font-size:.7rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);text-decoration:none}
+  .scroll i{width:1px;height:46px;background:linear-gradient(var(--gold-2),transparent);position:relative;overflow:hidden}
+  .scroll i::after{content:"";position:absolute;left:0;top:-40%;width:1px;height:40%;background:var(--gold-1);animation:drop 2s ease-in-out infinite}
+  @keyframes drop{to{top:110%}}
+  /* на невысоких экранах текст первого экрана доходит до низа — подсказка легла бы поверх него */
+  @media (max-height:800px){ .scroll{display:none} }
+
+  /* светодиодная линия, как подсветка под шкафами */
+  .led{height:1px;position:relative;background:linear-gradient(90deg,transparent,rgba(207,159,102,.35),transparent);margin:0 0 0;overflow-x:clip}  /* бегущий блик не выезжает за край экрана */
+  .led::before{content:"";position:absolute;inset:-14px 0;background:radial-gradient(50% 14px at 50% 50%,rgba(241,211,162,.28),transparent);}
+  .led::after{content:"";position:absolute;top:0;height:1px;width:22%;left:-22%;
+    background:linear-gradient(90deg,transparent,var(--gold-1),transparent);animation:sweep 6s ease-in-out infinite}
+  @keyframes sweep{to{left:100%}}
+
+  /* ---------- цифры ---------- */
+  .facts{display:grid;grid-template-columns:repeat(3,1fr);padding:70px 0 20px;text-align:center}
+  .fact strong{display:block;font-size:clamp(2.6rem,5vw,4rem);font-weight:200;line-height:1;color:var(--gold-1)}
+  .fact span{display:block;margin-top:12px;font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+  .fact + .fact{border-left:1px solid var(--line)}
+
+  .ring{flex-shrink:0;width:72px;height:72px;border-radius:50%;border:1px solid var(--gold-2);display:grid;place-items:center;
+    box-shadow:inset 0 0 18px rgba(207,159,102,.12)}
+  .ring svg{width:32px;height:32px;stroke:var(--gold-1);fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+
+  /* ---------- полоса направлений ---------- */
+  .types{display:grid;grid-template-columns:repeat(4,1fr)}
+  .type{appearance:none;background:none;border:none;color:var(--text);font:inherit;cursor:pointer;
+    text-align:center;padding:26px 8px 24px;position:relative;transition:background .35s}
+  .type + .type::before{content:"";position:absolute;left:0;top:22%;bottom:22%;width:1px;background:var(--line)}
+  .type::after{content:"";position:absolute;left:30%;right:30%;bottom:0;height:2px;border-radius:2px;
+    background:linear-gradient(90deg,transparent,var(--gold-1),transparent);transform:scaleX(0);transition:transform .4s}
+  .type svg{width:64px;height:64px;stroke:var(--gold-2);fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;transition:transform .35s,stroke .35s}
+  .type div{margin-top:12px;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase}
+  .type small{display:block;margin-top:6px;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);opacity:.7;transition:opacity .3s,color .3s}
+  .type:hover{background:rgba(207,159,102,.06)}
+  .type:hover svg,.type.active svg{transform:translateY(-4px);stroke:var(--gold-1)}
+  .type.active{background:rgba(207,159,102,.08)}
+  .type.active::after{transform:scaleX(1)}
+  .type.active small{color:var(--gold-1);opacity:1}
+  .type:focus-visible{outline:1px solid var(--gold-2);outline-offset:-1px}
+  .hint{text-align:center;color:var(--muted);font-size:.9rem;margin-top:-18px;margin-bottom:30px}
+
+  /* ---------- галерея ---------- */
+  .gallery{display:grid;grid-template-rows:0fr;transition:grid-template-rows .6s cubic-bezier(.2,.7,.2,1)}
+  .gallery.open{grid-template-rows:1fr}
+  .gallery > div{overflow:hidden}
+  .gal{display:grid;gap:16px;padding-top:26px;grid-template-columns:repeat(2,1fr)}
+  .gal[data-n="1"]{grid-template-columns:1fr}
+  .gal[data-n="1"] figure{aspect-ratio:16/9}
+  .gal[data-n="3"]{grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr}
+  .gal[data-n="3"] figure:first-child{grid-row:span 2;aspect-ratio:auto}
+  .gal.many{grid-template-columns:repeat(3,1fr)}
+  .gal figure{position:relative;aspect-ratio:1/1;overflow:hidden;border-radius:4px;border:1px solid var(--line);cursor:zoom-in;
+    opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease,border-color .3s}
+  .gallery.open .gal figure{opacity:1;transform:none}
+  .gallery.open .gal figure:nth-child(2){transition-delay:.1s}
+  .gallery.open .gal figure:nth-child(3){transition-delay:.2s}
+  .gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s ease}
+  .gal figure::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,8,7,.55),transparent 45%);opacity:.7;transition:opacity .4s}
+  .gal figure:hover{border-color:rgba(241,211,162,.55)}
+  .gal figure:hover img{transform:scale(1.05)}
+  .gal figure:hover::after{opacity:.3}
+  .gal .zoom{position:absolute;right:14px;bottom:14px;z-index:1;width:40px;height:40px;border-radius:50%;
+    border:1px solid rgba(241,211,162,.6);background:rgba(10,8,7,.5);backdrop-filter:blur(4px);display:grid;place-items:center}
+  .gal .zoom svg{width:18px;height:18px;stroke:var(--gold-1);fill:none;stroke-width:1.6;stroke-linecap:round}
+
+  /* ---------- просмотр фото ---------- */
+  .lb{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;background:rgba(6,5,4,.94);backdrop-filter:blur(6px)}
+  .lb.open{display:flex;animation:fade .3s ease}
+  .lb img{max-width:min(92vw,1400px);max-height:84vh;border-radius:4px;box-shadow:0 30px 80px -20px #000;object-fit:contain}
+  .lb button{position:absolute;background:rgba(255,255,255,.04);border:1px solid var(--line);color:var(--gold-1);
+    width:52px;height:52px;border-radius:50%;cursor:pointer;display:grid;place-items:center;transition:background .3s}
+  .lb button:hover{background:rgba(207,159,102,.18)}
+  .lb button svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+  .lb .lb-prev{left:24px;top:50%;transform:translateY(-50%)}
+  .lb .lb-next{right:24px;top:50%;transform:translateY(-50%)}
+  .lb .lb-close{right:24px;top:24px}
+  .lb .lb-count{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);color:var(--muted);font-size:.8rem;letter-spacing:.24em;text-transform:uppercase}
+
+  /* ---------- секции ---------- */
+  section{padding:64px 0}
+  .title{text-align:center;margin-bottom:40px}
+  .title h2{font-size:clamp(1.4rem,3.2vw,2.1rem);font-weight:300;letter-spacing:.18em;text-transform:uppercase}
+  .title .rule{width:160px;margin:18px auto 0}
+
+  /* ---------- преимущества ---------- */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{
+    background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.012));
+    border:1px solid var(--line);border-radius:6px;padding:34px 28px;position:relative;overflow:hidden;
+    transition:transform .4s ease,border-color .4s ease,box-shadow .4s ease;
+  }
+  .card::before{content:"";position:absolute;inset:0;opacity:0;transition:opacity .4s;
+    background:radial-gradient(400px 200px at 50% 0%,rgba(207,159,102,.16),transparent 70%)}
+  .card::after{content:"";position:absolute;left:28px;right:28px;bottom:0;height:2px;
+    background:linear-gradient(90deg,transparent,var(--gold-2),transparent);opacity:.5}
+  .card:hover{transform:translateY(-8px);border-color:rgba(241,211,162,.5);box-shadow:0 24px 50px -22px rgba(207,159,102,.4)}
+  .card:hover::before{opacity:1}
+  .card .ring{margin-bottom:22px;position:relative}
+  .card h3{font-size:1.1rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px;position:relative}
+  .card p{color:var(--muted);font-size:.97rem;position:relative}
+
+  /* ---------- CTA ---------- */
+  .cta{text-align:center;padding:60px 0 90px}
+  .cta-box{border:1px solid var(--line);border-radius:6px;padding:58px 24px;
+    background:radial-gradient(600px 260px at 50% 0%,rgba(207,159,102,.16),transparent 70%),rgba(255,255,255,.02)}
+  .cta h2{font-size:clamp(1.5rem,3.6vw,2.4rem);font-weight:300;letter-spacing:.12em;text-transform:uppercase}
+  .cta p{color:var(--muted);max-width:560px;margin:14px auto 34px}
+  .btn{
+    position:relative;display:inline-flex;align-items:center;gap:12px;
+    padding:18px 40px;border-radius:999px;border:none;cursor:pointer;
+    font:600 1rem/1 inherit;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;
+    color:#1a120a;background:linear-gradient(100deg,var(--gold-1),var(--gold-2) 55%,var(--gold-3));
+    transition:transform .25s ease;
+  }
+  .btn svg{width:20px;height:20px;stroke:#1a120a;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .25s}
+  .btn:hover{transform:scale(1.05)}
+  .btn:hover svg{transform:translateX(4px)}
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(241,211,162,.55),0 10px 30px -8px rgba(207,159,102,.6)}
+    70%{box-shadow:0 0 0 22px rgba(241,211,162,0),0 10px 30px -8px rgba(207,159,102,.6)}
+    100%{box-shadow:0 0 0 0 rgba(241,211,162,0),0 10px 30px -8px rgba(207,159,102,.6)}
+  }
+  .vk{display:inline-flex;align-items:center;gap:10px;margin-top:26px;color:var(--muted);text-decoration:none;font-size:.95rem;transition:color .3s}
+  .vk svg{width:26px;height:26px}
+  .vk:hover{color:var(--gold-1)}
+
+  footer{text-align:center;color:#7a6f63;font-size:.82rem;letter-spacing:.06em;padding:0 0 34px}
+  .foot-logo{width:96px;height:96px;margin:0 auto 18px;display:block;border-radius:50%;opacity:.9;box-shadow:0 0 0 1px rgba(207,159,102,.25)}
+  .modal-logo{width:84px;height:84px;margin:0 auto 18px;display:block;border-radius:50%;box-shadow:0 0 0 1px rgba(207,159,102,.3),0 10px 30px -10px #000}
+
+  /* ---------- появление ---------- */
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity .9s ease,transform .9s ease}
+  .reveal.show{opacity:1;transform:none}
+  .d1{transition-delay:.12s}.d2{transition-delay:.24s}.d3{transition-delay:.36s}
+
+  /* ---------- модалка ---------- */
+  .modal{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(5,4,3,.78);backdrop-filter:blur(6px)}
+  .modal.open{display:flex;animation:fade .3s ease}
+  @keyframes fade{from{opacity:0}to{opacity:1}}
+  .modal-card{width:100%;max-width:420px;border:1px solid var(--line);border-radius:8px;padding:36px 28px;
+    background:linear-gradient(170deg,#1c1510,#0e0b09);position:relative;text-align:center}
+  .modal-card h3{font-weight:300;font-size:1.35rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+  .modal-card p{color:var(--muted);font-size:.95rem;margin-bottom:24px}
+  .close{position:absolute;top:12px;right:16px;background:none;border:none;color:var(--muted);font-size:1.6rem;cursor:pointer;line-height:1}
+  .close:hover{color:var(--gold-1)}
+  .modal-card .btn{animation:none;width:100%;justify-content:center}
+  /* окно выше экрана телефона — прокручивается, а не обрезается сверху */
+  .modal{overflow-y:auto;align-items:flex-start}
+  .modal-card{margin:auto}
+
+  /* ---------- квиз в окне «Рассчитать стоимость» ---------- */
+  .q-progress{height:2px;background:var(--line);border-radius:2px;overflow:hidden;margin-bottom:10px}
+  .q-progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold-2),var(--gold-1));transition:width .4s ease}
+  .modal-card .q-count{font-size:.8rem;letter-spacing:.04em;margin-bottom:18px}
+  .q-step{border:none;padding:0;margin:0;min-width:0;outline:none}
+  .q-step.anim{animation:qin .35s ease}
+  @keyframes qin{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
+  .q-step legend{width:100%;padding:0;margin-bottom:14px;font-size:1.08rem;color:var(--text);text-align:center}
+  .modal-card .q-hint{font-size:.82rem;margin:-6px 0 14px}
+  .q-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:left}
+  .q-opts.wide{grid-template-columns:1fr}
+  .q-opt{position:relative;display:block;cursor:pointer}
+  .q-opt input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+  .q-opt span{display:block;height:100%;padding:13px 14px;border:1px solid var(--line);border-radius:6px;background:rgba(255,255,255,.03);
+    color:var(--text);font-size:.95rem;line-height:1.35;transition:border-color .25s,background .25s}
+  .q-opt small{display:block;margin-top:4px;color:var(--muted);font-size:.8rem;line-height:1.4}
+  .q-opt:hover span{border-color:rgba(241,211,162,.45)}
+  .q-opt input:checked + span{border-color:var(--gold-1);background:rgba(207,159,102,.1)}
+  .q-opt input:focus-visible + span{outline:1px solid var(--gold-1);outline-offset:2px}
+  .q-nav{display:flex;align-items:center;gap:12px;margin-top:22px}
+  .modal-card .q-nav .btn{flex:1;width:auto}
+  .modal-card .btn:disabled{opacity:.4;cursor:not-allowed;box-shadow:none}
+  .q-link{background:none;border:none;padding:10px 6px;color:var(--muted);font:inherit;font-size:.9rem;cursor:pointer}
+  .q-link:hover,.q-link:focus-visible{color:var(--gold-1)}
+  .q-link[hidden]{display:none}
+  .form-alt a[href^="tel"]{white-space:nowrap}
+  .q-skip{display:block;margin:14px auto 0;font-size:.85rem;text-decoration:underline;text-underline-offset:3px}
+  .q-price{margin:6px 0 8px;font-size:clamp(1.55rem,6vw,2rem);font-weight:300;letter-spacing:.02em;color:var(--gold-1);line-height:1.25}
+  .modal-card .q-sum{font-size:.9rem;color:var(--text);margin-bottom:10px}
+  .modal-card .q-note{font-size:.8rem;margin-bottom:22px}
+  .q-result .q-link{display:block;margin:10px auto 0}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    .reveal{opacity:1;transform:none}
+  }
+
+
+  /* ---------- телефон в шапке ---------- */
+  .head-right{display:flex;align-items:center;gap:26px}
+  .head-phone{color:var(--gold-1);text-decoration:none;font-weight:500;letter-spacing:.04em;font-size:1.02rem;white-space:nowrap}
+  .head-phone small{display:block;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:400;text-align:right}
+  .head-phone:hover{color:#fff}
+
+  /* ---------- плюсы под кнопкой ---------- */
+  .hero-cta{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:40px}
+  .hero-cta .hero-btn{margin-top:0}
+  .hero-points{list-style:none;display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:28px;color:var(--muted);font-size:.9rem}
+  .hero-points li{position:relative;padding-left:18px}
+  .hero-points li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border:1px solid var(--gold-2);transform:rotate(45deg)}
+
+  /* ---------- как работаем ---------- */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:st}
+  .step{border:1px solid var(--line);border-radius:6px;padding:28px 26px;background:var(--card);position:relative}
+  .step b{display:block;font-size:2.2rem;font-weight:200;color:var(--gold-1);line-height:1;margin-bottom:14px}
+  .step h3{font-size:1rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+  .step p{color:var(--muted);font-size:.95rem}
+  .price-strip{margin-top:30px;text-align:center;border:1px solid var(--line);border-radius:6px;padding:22px 20px;
+    background:radial-gradient(500px 120px at 50% 0%,rgba(207,159,102,.12),transparent 70%)}
+  .price-strip strong{color:var(--gold-1);font-weight:400;font-size:1.15rem;letter-spacing:.04em}
+  .price-strip span{display:block;color:var(--muted);font-size:.9rem;margin-top:6px}
+  .price-strip .sep{font-style:normal}
+  /* на телефоне цены — двумя строками, без точки-разделителя */
+  @media (max-width:560px){ .price-strip .sep{display:block;height:0;overflow:hidden} }
+
+  /* ---------- отзывы ---------- */
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .review{border:1px solid var(--line);border-radius:6px;padding:30px 26px;background:var(--card);display:flex;flex-direction:column}
+  .review .q{font-size:3rem;line-height:.6;color:var(--gold-2);font-family:Georgia,serif;height:24px}
+  .review p{color:var(--text);opacity:.88;font-size:.97rem;flex:1}
+  .review footer{all:unset;display:block;margin-top:18px;color:var(--gold-1);font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+  .review footer span{display:block;color:var(--muted);letter-spacing:.06em;text-transform:none;font-size:.82rem;margin-top:4px}
+  .more-link{display:block;text-align:center;margin-top:26px;color:var(--muted);text-decoration:none;font-size:.95rem}
+  .more-link:hover{color:var(--gold-1)}
+
+  /* ---------- вопросы ---------- */
+  .faq{max-width:820px;margin:0 auto}
+  .faq details{border-bottom:1px solid var(--line)}
+  .faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;position:relative;font-size:1.05rem;letter-spacing:.02em}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);color:var(--gold-1);font-size:1.6rem;font-weight:200;transition:transform .3s}
+  .faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+  .faq details p{color:var(--muted);padding:0 0 22px;max-width:720px}
+
+  /* ---------- форма ---------- */
+  .lead-form{display:grid;gap:12px;text-align:left}
+  .lead-form label.f{display:block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .lead-form input[type=text],.lead-form input[type=tel],.lead-form select{width:100%;margin-top:6px;padding:14px 16px;border-radius:6px;
+    border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--text);font:inherit;font-size:1rem;outline:none;transition:border-color .3s}
+  .lead-form select option{background:#1c1510;color:var(--text)}
+  .lead-form input:focus,.lead-form select:focus{border-color:var(--gold-2)}
+  .lead-form .consent{display:flex;gap:10px;align-items:flex-start;font-size:.8rem;color:var(--muted);line-height:1.45;margin:4px 0 6px}
+  .lead-form .consent input{margin-top:3px;accent-color:#cf9f66;flex-shrink:0;width:16px;height:16px}
+  .lead-form .consent a{color:var(--gold-1)}
+  .lead-form .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+  .lead-form .btn[disabled]{opacity:.6;cursor:wait}
+  .form-msg{font-size:.9rem;min-height:1.2em;text-align:center}
+  .form-msg.err{color:#e8a08a}
+  .form-alt{margin-top:18px;font-size:.88rem;color:var(--muted)}
+  .form-alt a{color:var(--gold-1)}
+  .done{display:none}
+  .done.show{display:block}
+  .demo-note{margin-top:18px;font-size:.78rem;color:var(--muted);opacity:.8}
+  .modal-card{max-height:calc(100vh - 40px);overflow-y:auto}
+
+  /* ---------- нижняя панель на телефоне ---------- */
+  .mbar{display:none}
+  @media (max-width:560px){
+    .head-phone{font-size:.92rem}
+    .head-phone small{display:none}
+    .logo>div{display:none}
+    .modal-logo{display:none}
+    .modal-card{padding:30px 20px 24px}
+    .hero-cta{justify-content:center;gap:16px}
+    .hero-points{justify-content:center;font-size:.85rem}
+    .mbar{display:grid;grid-template-columns:1fr 1.4fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:40;
+      padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(10,8,7,.92);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+    .mbar a,.mbar button{display:flex;align-items:center;justify-content:center;gap:8px;height:48px;border-radius:999px;font-family:inherit;font-weight:600;font-size:.82rem;line-height:1;
+      letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:pointer}
+    .mbar a{border:1px solid var(--gold-2);color:var(--gold-1);background:transparent}
+    .mbar button{border:none;color:#1a120a;background:linear-gradient(100deg,var(--gold-1),var(--gold-2) 55%,var(--gold-3))}
+    .mbar svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    body{padding-bottom:74px}
+  }
+  @media (max-width:900px){
+    .steps,.reviews{grid-template-columns:1fr;max-width:560px;margin-left:auto;margin-right:auto}
+  }
+
+
+  /* ---------- адаптив ---------- */
+  @media (max-width:900px){
+    .hero{grid-template-columns:1fr;min-height:0;text-align:center}
+    .hero-text{padding:40px 0 10px}
+    .hero .rule{margin:26px auto 24px;background:linear-gradient(90deg,transparent,var(--gold-2),transparent)}
+    .hero .rule::after{left:50%}
+    .lead2{margin:0 auto}
+    .hero-btn{margin-top:30px}
+    .photo{justify-content:center;margin:10px -20px 0}
+    .photo img{height:auto;min-height:0;width:min(86vw,440px)}
+    .caption,.scroll,.hero-bg{display:none}
+    .cards{grid-template-columns:1fr;max-width:560px;margin:0 auto}
+  }
+  @media (max-width:560px){
+    header{padding:16px 0}
+    .logo{font-size:.7rem;letter-spacing:.14em}
+    .head-link{display:none}
+    .hero-text{padding-top:30px}
+    .eyebrow{letter-spacing:.3em;font-size:.8rem}
+    h1{font-size:clamp(2.8rem,14vw,4rem)}
+    .facts{grid-template-columns:1fr;padding:44px 0 0;gap:28px}
+    .fact + .fact{border-left:none;border-top:1px solid var(--line);padding-top:28px}
+    .types{grid-template-columns:repeat(2,1fr);row-gap:6px}
+    .type::before{display:none!important}
+    .type{padding:18px 4px 18px}
+    .type svg{width:46px;height:46px}
+    .type div{font-size:.68rem;letter-spacing:.08em}
+    .type small{display:none}
+    .hint{margin-top:-10px;font-size:.85rem}
+    .gal,.gal[data-n="3"],.gal.many{grid-template-columns:1fr;grid-template-rows:none;gap:12px}
+    .gal figure,.gal[data-n="3"] figure:first-child{aspect-ratio:4/3;grid-row:auto}
+    .lb .lb-prev,.lb .lb-next{top:auto;bottom:16px;transform:none;width:46px;height:46px}
+    .lb .lb-prev{left:16px}.lb .lb-next{right:16px}
+    .lb .lb-close{right:14px;top:14px}
+    .lb img{max-width:96vw;max-height:76vh}
+    section{padding:46px 0}
+    .title h2{letter-spacing:.1em}
+    .card{padding:28px 22px}
+    .cta-box{padding:42px 18px}
+    .btn{padding:17px 24px;font-size:.9rem;width:100%;justify-content:center}
+  }
+
+  /* ---------- до и после ---------- */
+  .ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .ba-grid figure{position:relative;aspect-ratio:3/4;overflow:hidden;border-radius:4px;border:1px solid var(--line);cursor:zoom-in;transition:border-color .3s}
+  .ba-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s ease}
+  .ba-grid figure::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,8,7,.5),transparent 40%);pointer-events:none}
+  .ba-grid figure:hover{border-color:rgba(241,211,162,.55)}
+  .ba-grid figure:hover img{transform:scale(1.04)}
+  .ba-grid .zoom{position:absolute;right:14px;bottom:14px;z-index:1;width:40px;height:40px;border-radius:50%;
+    border:1px solid rgba(241,211,162,.6);background:rgba(10,8,7,.5);backdrop-filter:blur(4px);display:grid;place-items:center}
+  .ba-grid .zoom svg{width:18px;height:18px;stroke:var(--gold-1);fill:none;stroke-width:1.6;stroke-linecap:round}
+  .ba-label{position:absolute;left:14px;top:14px;z-index:1;padding:7px 14px;border-radius:999px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--text);background:rgba(10,8,7,.62);border:1px solid var(--line);backdrop-filter:blur(4px)}
+  .ba-grid figure:nth-child(2) .ba-label{color:#1a120a;border-color:transparent;background:linear-gradient(100deg,var(--gold-1),var(--gold-2))}
+  .ba-note{text-align:center;color:var(--muted);margin-top:22px;font-size:.97rem}
+  .ba-note a{color:var(--gold-1);text-decoration:none;border-bottom:1px solid var(--line);white-space:nowrap}
+  @media (max-width:560px){
+    .ba-grid{grid-template-columns:1fr 1fr;gap:10px}
+    .ba-grid figure:nth-child(3){grid-column:1 / -1;aspect-ratio:4/3}
+    .ba-label{left:10px;top:10px;padding:6px 11px;font-size:.64rem;letter-spacing:.14em}
+    .ba-grid .zoom{display:none}
+  }
+
+  /* ---------- фото в отзывах ---------- */
+  .rv-photos{display:flex;gap:8px;margin-top:20px}
+  .rv-photos figure{width:64px;height:64px;flex-shrink:0;border-radius:4px;overflow:hidden;border:1px solid var(--line);cursor:zoom-in;transition:border-color .3s,transform .3s}
+  .rv-photos figure:hover{border-color:rgba(241,211,162,.6);transform:translateY(-2px)}
+  .rv-photos img{width:100%;height:100%;object-fit:cover;display:block}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">
+      <img class="logo-img" src="img/logo-small.webp" alt="Логотип «Сделано Хорошо»" width="48" height="48">
+      <div>Сделано <span>Хорошо</span></div>
+    </div>
+    <div class="head-right">
+      <a class="head-link" href="https://vk.ru/sdelano_horosho" target="_blank" rel="noopener">Мы ВКонтакте</a>
+      <a class="head-phone" href="tel:+79507291818">+7 (950) 729-18-18</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="eyebrow reveal">Корпусная мебель · Челябинск</div>
+      <h1 class="reveal d1">На заказ</h1>
+      <div class="rule reveal d1"></div>
+      <p class="lead2 reveal d2"><b>Кухни, шкафы и гардеробные по размерам вашего помещения — от замера до монтажа в среднем за месяц, небольшие заказы ещё быстрее.</b> Работаете напрямую с мастером, без наценок салона. Выезжаю по Челябинску, области и в другие города.</p>
+      <div class="hero-cta reveal d3">
+        <button class="btn hero-btn js-open" type="button">
+          Рассчитать стоимость
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>      </div>
+      <ul class="hero-points reveal d3">
+        <li>Расчёт за 3 дня</li>
+        <li>Замер бесплатно</li>
+        <li>Гарантия 1 год</li>
+      </ul>
+    </div>
+
+    <div class="photo">
+      <img src="img/dmitry.webp" alt="Дмитрий Процюк — мастер корпусной мебели" width="941" height="1400">
+    </div>
+    <div class="hero-bg" aria-hidden="true"><div class="blur" id="heroBlur"></div><img src="img/hero-bg.webp" alt="" id="heroBgImg"></div>
+    <div class="caption"><b>Дмитрий Процюк</b><span>мастер корпусной мебели</span></div>
+    <a class="scroll" href="#facts"><i></i>Листайте</a>
+  </section>
+</div>
+
+<div class="led"></div>
+
+<div class="wrap">
+  <!-- Цифры -->
+  <div class="facts" id="facts">
+    <div class="fact reveal"><strong data-count="10">10+</strong><span>лет опыта</span></div>
+    <div class="fact reveal d1"><strong data-count="1000">1 000+</strong><span>реализованных проектов</span></div>
+    <div class="fact reveal d2"><strong>Дом · Офис</strong><span>частные и корпоративные клиенты</span></div>
+  </div>
+
+  <!-- Направления -->
+  <section>
+    <div class="title reveal">
+      <h2>Что изготавливаю</h2>
+      <div class="rule"></div>
+    </div>
+    <p class="hint reveal">Выберите направление, чтобы посмотреть другие работы</p>
+  <nav class="types reveal" aria-label="Направления">
+    <button class="type active" type="button" data-target="g-kitchen" aria-expanded="true" aria-controls="g-kitchen">
+      <svg viewBox="0 0 64 64"><path d="M6 36h52v22H6z"/><path d="M6 36h52M24 36v22M42 36v22"/><path d="M28 47h10"/><rect x="45" y="41" width="9" height="12"/><path d="M14 36V20a4 4 0 018 0"/><path d="M40 30h14l-3-8h-8z"/><path d="M47 22v-8"/></svg>
+      <div>Кухни</div><small>Смотреть работы</small>
+    </button>
+    <button class="type" type="button" data-target="g-wardrobe" aria-expanded="false" aria-controls="g-wardrobe">
+      <svg viewBox="0 0 64 64"><rect x="14" y="6" width="36" height="52"/><path d="M32 6v40M14 46h36M32 46v12"/><path d="M28 26v6M36 26v6"/><path d="M20 52h6M38 52h6"/></svg>
+      <div>Шкафы</div><small>Смотреть работы</small>
+    </button>
+    <button class="type" type="button" data-target="g-hall" aria-expanded="false" aria-controls="g-hall">
+      <svg viewBox="0 0 64 64"><rect x="10" y="6" width="44" height="52"/><path d="M26 6v52"/><path d="M14 46h36M14 52h36"/><path d="M34 14v4M42 14v4M50 14v4"/><path d="M34 18c-2 4-2 10 0 14M42 18v8"/><circle cx="18" cy="24" r="3"/><path d="M18 27v12"/></svg>
+      <div>Прихожие</div><small>Смотреть работы</small>
+    </button>
+    <button class="type" type="button" data-target="g-biz" aria-expanded="false" aria-controls="g-biz">
+      <svg viewBox="0 0 64 64"><path d="M8 30h48v24H8z"/><path d="M6 30h52"/><rect x="24" y="34" width="16" height="14"/><path d="M24 41h16"/><path d="M8 58h48"/><path d="M12 24h12l2-6H14z"/><path d="M44 18v12M38 18h12"/><path d="M14 38h6M44 38h8"/></svg>
+      <div>Для бизнеса</div><small>Смотреть работы</small>
+    </button>
+  </nav>
+  <div class="gallery open" id="g-kitchen" aria-label="Кухни — работы">
+    <div>
+      <div class="gal" data-n="2">
+          <figure><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/kuhnya-beton.webp" alt="Кухня с фасадами под бетон и столешницей под дерево" loading="lazy"></figure>
+          <figure><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/kuhnya-mramor.webp" alt="Белая угловая кухня с мраморным фартуком" loading="lazy"></figure>
+          <figure><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/svetlana-posle.webp" alt="Компактная кухня с графитовыми фасадами и столешницей под дуб" loading="lazy"></figure>
+          <figure><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/kuhnya-bezh-1.webp" alt="Угловая кухня в бежевых тонах с подсветкой и открытыми полками" loading="lazy"></figure>
+          <figure><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/kuhnya-bezh-2.webp" alt="Бежевая кухня со встроенной духовкой и антресолями над холодильником" loading="lazy"></figure>
+          <figure><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/kuhnya-belaya.webp" alt="Белая угловая кухня с фартуком-панно и трековыми светильниками" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+  <div class="gallery" id="g-wardrobe" aria-label="Шкафы — работы">
+    <div>
+      <div class="gal" data-n="2">
+          <figure><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/shkaf-vstroennyj.webp" alt="Встроенный шкаф во всю стену" loading="lazy"></figure>
+          <figure><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/shkaf-belyj.webp" alt="Белый распашной шкаф с фрезерованными фасадами и золотыми ручками" loading="lazy"></figure>
+          <figure><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/shkaf-polki.webp" alt="Встроенный шкаф под светлое дерево с угловыми полками" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+  <div class="gallery" id="g-hall" aria-label="Прихожие — работы">
+    <div>
+      <div class="gal" data-n="2">
+          <figure><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/prihozhaya-1.webp" alt="Прихожая со шкафами, ящиками и зеркальной нишей" loading="lazy"></figure>
+          <figure><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/prihozhaya-2.webp" alt="Шкаф вдоль коридора с чёрными ручками" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+  <div class="gallery" id="g-biz" aria-label="Для бизнеса — работы">
+    <div>
+      <div class="gal" data-n="2">
+          <figure><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/biz-ostrovok.webp" alt="Торговый островок в ТЦ" loading="lazy"></figure>
+          <figure><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/biz-resepshen.webp" alt="Ресепшен клиники с мраморной стойкой" loading="lazy"></figure>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- ПРЕИМУЩЕСТВА -->
+  <section>
+    <div class="title reveal">
+      <h2>Почему выбирают меня</h2>
+      <div class="rule"></div>
+    </div>
+    <p class="hint reveal">Для квартир и домов, а ещё для офисов, салонов&nbsp;и&nbsp;кафе</p>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="ring"><svg viewBox="0 0 24 24"><path d="M3 21l3-1 11-11-2-2L4 18z"/><path d="M15 7l2 2"/><path d="M14 4l6 6"/><path d="M3 3h6M3 3v6"/></svg></div>
+        <h3>Под ваши размеры и привычки</h3>
+        <p>Начинаю с того, как вы живёте, а не с каталога. Проектирую под помещение до сантиметра, чтобы работали каждый угол и ниша: удобные ящики, продуманное хранение, подсветка.</p>
+      </article>
+      <article class="card reveal d1">
+        <div class="ring"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Служит годами</h3>
+        <p>Больше 10&nbsp;лет опыта и 1&nbsp;000+ проектов. Надёжные материалы, проверенная фурнитура и аккуратный монтаж — мебель не придётся переделывать через пару лет.</p>
+      </article>
+      <article class="card reveal d2">
+        <div class="ring"><svg viewBox="0 0 24 24"><path d="M6 3h12l3 5-9 13L3 8z"/><path d="M3 8h18M9 3l3 18 3-18"/></svg></div>
+        <h3>Красиво в рамках бюджета</h3>
+        <p>Работаете напрямую со мной, без наценок салона. Предложу несколько вариантов материалов под вашу сумму, чтобы мебель выглядела дорого. Честная смета без скрытых доплат.</p>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- КАК РАБОТАЕМ -->
+  <section id="how">
+    <div class="title reveal">
+      <h2>Как я работаю</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><b>01</b><h3>Заявка</h3><p>Оставляете заявку или звоните. Обсуждаем задачу, стиль и бюджет.</p></div>
+      <div class="step reveal d1"><b>02</b><h3>Замер</h3><p>Приезжаю, делаю точные замеры и показываю образцы материалов. Замер бесплатный.</p></div>
+      <div class="step reveal d2"><b>03</b><h3>Проект и смета</h3><p>Готовлю проект и смету за 3 дня. Вносим правки, пока вам всё не понравится.</p></div>
+      <div class="step reveal"><b>04</b><h3>Договор</h3><p>Фиксируем цену и сроки в договоре.</p></div>
+      <div class="step reveal d1"><b>05</b><h3>Изготовление</h3><p>Срок зависит от размера и сложности: компактная кухня — от недели, большой гарнитур — дольше. Держу вас в курсе на каждом этапе.</p></div>
+      <div class="step reveal d2"><b>06</b><h3>Монтаж</h3><p>Собираю и устанавливаю мебель, убираю за собой. Гарантия — 1 год.</p></div>
+    </div>
+    <div class="price-strip reveal">
+      <strong>Кухни&nbsp;—&nbsp;от&nbsp;100&nbsp;000&nbsp;₽<em class="sep"> · </em>Шкафы&nbsp;—&nbsp;от&nbsp;30&nbsp;000&nbsp;₽</strong>
+      <span>Точная стоимость зависит от размеров, материалов и фурнитуры — рассчитаю бесплатно</span>
+    </div>
+  </section>
+
+  <!-- ДО И ПОСЛЕ -->
+  <section id="before-after">
+    <div class="title reveal">
+      <h2>До и после</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="ba-grid reveal">
+          <figure><span class="ba-label">До</span><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/svetlana-do.webp" alt="Кухня Светланы до: старый гарнитур и сиреневые стены" loading="lazy"></figure>
+          <figure><span class="ba-label">После</span><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/svetlana-posle.webp" alt="Кухня Светланы после: графитовые фасады, столешница и стеновая панель под дуб" loading="lazy"></figure>
+          <figure><span class="ba-label">Детали</span><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8v6M8 11h6"/></svg></span><img src="img/svetlana-detal.webp" alt="Каменная мойка, рейлинг и навесной шкаф под дуб" loading="lazy"></figure>
+    </div>
+    <p class="ba-note reveal">Компактная кухня Светланы — готова через неделю после дизайн-проекта. Доводчики, бутылочница и каменная мойка. <a href="#reviews">Читать отзыв →</a></p>
+  </section>
+
+  <!-- ОТЗЫВЫ -->
+  <section id="reviews">
+    <div class="title reveal">
+      <h2>Отзывы клиентов</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="reviews">
+      <blockquote class="review reveal"><div class="q">“</div><p>Кухня супер! Я очень довольна! Дмитрий быстро приехал, сделал дизайн-проект, всё обсудили, через неделю любовалась новой современной кухней! Всё продумано до мелочей: доводчики, сушилка, подложка под вилки и ложки, фурнитура, бутылочница! А ещё со скидкой каменная раковина. Мечта, а не кухня! И цена адекватная! Однозначно рекомендую Дмитрия! Ещё не раз обратимся! Я счастливый человек, что встретила специалиста на своём пути!</p><div class="rv-photos" aria-label="Фото работы"><figure><img src="img/svetlana-do.webp" alt="Кухня Светланы до" loading="lazy"></figure><figure><img src="img/svetlana-posle.webp" alt="Кухня Светланы после: графитовые фасады и столешница под дуб" loading="lazy"></figure><figure><img src="img/svetlana-detal.webp" alt="Каменная мойка и навесной шкаф под дуб" loading="lazy"></figure></div><footer>Светлана<span>Кухня</span></footer></blockquote>
+      <blockquote class="review reveal d1"><div class="q">“</div><p>Отлично сделано, всё как и хотели! Дмитрий — мастер своего дела, воплотил все пожелания по кухне и гардеробной. Спасибо за такую работу. Кстати, обращаюсь не первый раз: впервые обратился 10 лет назад (проект тоже есть в группе, май 2016 г.), до сих пор пользуемся той кухней, и она нас радует! Но это не всё: впереди ещё много работы по обустройству квартиры мебелью, и снова Дмитрий будет воплощать все наши хотелки и желания в отличную мебель. Спасибо!</p><div class="rv-photos" aria-label="Фото работы"><figure><img src="img/kuhnya-bezh-1.webp" alt="Угловая кухня в бежевых тонах с подсветкой и открытыми полками" loading="lazy"></figure><figure><img src="img/kuhnya-bezh-2.webp" alt="Бежевая кухня со встроенной духовкой и антресолями над холодильником" loading="lazy"></figure><figure><img src="img/shkaf-polki.webp" alt="Встроенный шкаф с угловыми полками" loading="lazy"></figure></div><footer>Дмитрий<span>Кухня и гардеробная · клиент с 2016 года</span></footer></blockquote>
+      <blockquote class="review reveal d2"><div class="q">“</div><p>Вот уже 11 лет доверяю изготовление мебели только Дмитрию! Работа всегда выполнена на 10/10 и даже немного больше. Учитываются все пожелания, даже если они нестандартные, при этом ценник не стремится в космос. Мастер с золотыми руками, который всегда на связи и всегда предложит несколько альтернативных вариантов. Кухни, шкафы, прихожие, мебель для ванной — за всем только к нему. Однозначно рекомендую!</p><div class="rv-photos" aria-label="Фото работы"><figure><img src="img/kuhnya-belaya.webp" alt="Белая угловая кухня с фартуком-панно и трековыми светильниками" loading="lazy"></figure></div><footer>Надежда<span>Кухни, шкафы, прихожие · клиент 11 лет</span></footer></blockquote>
+    </div>
+    <a class="more-link reveal" href="https://vk.ru/sdelano_horosho" target="_blank" rel="noopener">Все отзывы и работы ВКонтакте →</a>
+  </section>
+
+  <!-- ВОПРОСЫ -->
+  <section id="faq">
+    <div class="title reveal">
+      <h2>Частые вопросы</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="faq reveal">
+      <details><summary>Сколько стоит мебель на заказ?</summary><p>Кухни — от 100 000 ₽, шкафы — от 30 000 ₽. Точная стоимость зависит от размеров, материалов и фурнитуры, рассчитаю её бесплатно.</p></details>
+      <details><summary>Замер платный?</summary><p>Нет, замер бесплатный. Приезжаю, снимаю точные размеры и показываю образцы материалов.</p></details>
+      <details><summary>Сколько ждать готовую мебель?</summary><p>Зависит от размера и сложности заказа. В среднем от замера до монтажа проходит около месяца, компактную кухню можно сделать быстрее: кухня Светланы была готова через неделю. Точный срок назову после замера и зафиксирую в договоре.</p></details>
+      <details><summary>Какая гарантия?</summary><p>Гарантия — 1 год. Условия гарантии прописываю в договоре.</p></details>
+      <details><summary>Работаете за пределами Челябинска?</summary><p>Да, выезжаю по Челябинской области и в другие города. Условия выезда обсудим при расчёте.</p></details>
+      <details><summary>Делаете мебель для бизнеса?</summary><p>Да: офисы, салоны, кафе, торговые островки, стойки ресепшен. Работаю по договору.</p></details>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-box reveal">
+      <h2>Обсудим вашу мебель?</h2>
+      <p>Расскажите, что хотите — я предложу решение и рассчитаю стоимость под ваш бюджет. Консультация и расчёт бесплатно.</p>
+      <button class="btn js-open" type="button">
+        Рассчитать стоимость
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <br>
+      <a class="vk" href="https://vk.ru/sdelano_horosho" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect width="24" height="24" rx="6" fill="#cf9f66"/>
+          <path fill="#1a120a" d="M12.8 17c-4.6 0-7.2-3.1-7.3-8.4h2.3c.1 3.8 1.8 5.4 3.1 5.8V8.6h2.2v3.3c1.3-.1 2.6-1.6 3.1-3.3h2.1c-.4 2-1.9 3.5-3 4.1 1.1.5 2.8 1.8 3.5 4.3h-2.3c-.5-1.6-1.8-2.9-3.4-3V17h-.3z"/>
+        </svg>
+        Портфолио и отзывы ВКонтакте — vk.ru/sdelano_horosho
+      </a>
+      <br>
+      <a class="vk" href="tel:+79507291818">Телефон и Max: +7 (950) 729-18-18</a>
+    </div>
+  </section>
+
+  <footer><img class="foot-logo" src="img/logo.webp" alt="Сделано Хорошо — мебель на заказ" width="96" height="96" loading="lazy">© <span id="year"></span> Сделано Хорошо · Дмитрий Процюк · Корпусная мебель на заказ в Челябинске<br>
+  <a href="tel:+79507291818" style="color:inherit">+7 (950) 729-18-18</a> · ИП Процюк Д. А. · <a href="privacy.html" style="color:inherit">Политика конфиденциальности</a><br>
+  Информация на сайте не является публичной офертой</footer>
+</div>
+
+<!-- Просмотр фото -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Просмотр фото">
+  <img id="lbImg" alt="">
+  <button class="lb-close" type="button" aria-label="Закрыть"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="lb-prev" type="button" aria-label="Предыдущее фото"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button class="lb-next" type="button" aria-label="Следующее фото"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+  <div class="lb-count" id="lbCount"></div>
+</div>
+
+<!-- Модальное окно -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="modal-card">
+    <img class="modal-logo" src="img/logo.webp" alt="" width="84" height="84">
+    <button class="close" id="closeBtn" aria-label="Закрыть">&times;</button>
+    <div class="quiz" id="quizWrap">
+      <h3 id="mTitle">Рассчитать стоимость</h3>
+      <p>Ответьте на несколько вопросов — покажу примерную цену.</p>
+      <div class="q-progress" aria-hidden="true"><span id="qBar"></span></div>
+      <p class="q-count" id="qCount"></p>
+      <fieldset class="q-step" id="qStep" tabindex="-1"><legend id="qQuestion"></legend><p class="q-hint" id="qHint" hidden></p><div class="q-opts" id="qOpts"></div></fieldset>
+      <div class="q-nav"><button type="button" class="q-link" id="qBack">Назад</button><button type="button" class="btn" id="qNext" disabled>Далее <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div>
+      <button type="button" class="q-link q-skip" id="qSkip">Сразу оставить телефон</button>
+    </div>
+    <div class="q-result" id="quizResult" hidden>
+      <h3>Примерная стоимость</h3>
+      <div class="q-price" id="qPrice"></div>
+      <p class="q-sum" id="qSum"></p>
+      <p class="q-note" id="qNote">Ориентир по средним ценам на мебель на заказ в Челябинске. Точную стоимость назову после бесплатного замера.</p>
+      <button class="btn" type="button" id="qToForm">Узнать точную цену <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <button type="button" class="q-link" id="qRestart">Пройти заново</button>
+    </div>
+    <div id="formWrap">
+      <h3 id="fTitle">Оставить заявку</h3>
+      <p id="fLead">Оставьте телефон — я перезвоню в течение часа, уточню детали и рассчитаю стоимость бесплатно.</p>
+      <form class="lead-form" id="leadForm" novalidate>
+        <label class="f">Ваше имя<input type="text" name="name" autocomplete="name" maxlength="60" placeholder="Как к вам обращаться"></label>
+        <label class="f">Телефон*<input type="tel" name="phone" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="+7 (___) ___-__-__" required></label>
+        <label class="f">Что нужно
+          <select name="what">
+            <option>Кухня</option><option>Шкаф / гардеробная</option><option>Прихожая</option>
+            <option>Мебель для ванной</option><option>Мебель для бизнеса</option><option>Другое</option>
+          </select>
+        </label>
+        <label class="f">Как с вами связаться
+          <select name="contact"><option>Звонок</option><option>ВКонтакте</option><option>Max</option></select>
+        </label>
+        <input type="hidden" name="quiz" id="quizField">
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label class="consent"><input type="checkbox" name="consent" required>
+          <span>Я даю <a href="consent.html" target="_blank">согласие на обработку персональных данных</a></span></label>
+        <button class="btn" type="submit">Отправить заявку
+          <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <div class="form-msg" id="formMsg" role="status" aria-live="polite"></div>
+      </form>
+      <div class="form-alt">Удобнее написать? <a href="https://vk.ru/sdelano_horosho" target="_blank" rel="noopener">ВКонтакте</a> или в Max по номеру <a href="tel:+79507291818">+7 (950) 729-18-18</a></div>
+    </div>
+    <div class="done" id="formDone">
+      <h3>Заявка отправлена</h3>
+      <p>Спасибо! Я свяжусь с вами в течение часа. Пока можно подготовить размеры помещения или фото — так расчёт будет точнее.</p>
+      <button class="btn" type="button" id="doneBtn">Хорошо</button>
+      <p class="demo-note" id="demoNote" hidden>Это демо-версия сайта: заявка никуда не отправлена, данные не сохраняются.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Нижняя панель на телефоне -->
+<div class="mbar">
+  <a href="tel:+79507291818"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg>Позвонить</a>
+  <button class="js-open" type="button">Рассчитать</button>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const animateCount = el => {
+    const target = +el.dataset.count, dur = 1600, start = performance.now();
+    const step = now => {
+      const p = Math.min((now - start) / dur, 1);
+      const val = Math.floor(target * (1 - Math.pow(1 - p, 3)));
+      el.textContent = val.toLocaleString('ru-RU') + (p === 1 ? '+' : '');
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add('show');
+      e.target.querySelectorAll('[data-count]').forEach(animateCount);
+      io.unobserve(e.target);
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  document.getElementById('heroBlur').style.backgroundImage = 'url(' + document.getElementById('heroBgImg').src + ')';
+  const modal = document.getElementById('modal');
+  const close = () => modal.classList.remove('open');
+  document.querySelectorAll('.js-open').forEach(b => b.addEventListener('click', () => {
+    modal.classList.add('open');
+    if (document.getElementById('formDone').classList.contains('show')) resetQuiz();  // после отправленной заявки — с начала
+    if (!document.getElementById('quizWrap').hidden) document.getElementById('qStep').focus({ preventScroll: true });
+  }));
+  document.getElementById('closeBtn').addEventListener('click', close);
+
+  // Заявка
+  const METRIKA_ID = 0; // номер счётчика Яндекс Метрики
+  const goal = name => { try { if (METRIKA_ID && window.ym) ym(METRIKA_ID, 'reachGoal', name); } catch (e) {} };
+  document.querySelectorAll('.js-open').forEach(b => b.addEventListener('click', () => goal('open_form')));
+  document.querySelectorAll('a[href^="tel:"]').forEach(a => a.addEventListener('click', () => goal('call_click')));
+  // Демо для портфолио: заявка не уходит на сервер. Для запуска на хостинге — поставить false (тогда работает send.php).
+  const DEMO = true;
+  const form = document.getElementById('leadForm'), msg = document.getElementById('formMsg');
+  const phoneEl = form.elements.phone;
+  phoneEl.addEventListener('input', () => {
+    let d = phoneEl.value.replace(/\D/g, '');
+    if (!d) { phoneEl.value = ''; return; }
+    if (d[0] === '8') d = '7' + d.slice(1);
+    if (d[0] !== '7') d = '7' + d;
+    d = d.slice(0, 11);
+    let r = '+7';
+    if (d.length > 1) r += ' (' + d.slice(1, 4);
+    if (d.length >= 4) r += ') ' + d.slice(4, 7);
+    if (d.length >= 7) r += '-' + d.slice(7, 9);
+    if (d.length >= 9) r += '-' + d.slice(9, 11);
+    phoneEl.value = r;
+  });
+  // ---------- Квиз «Рассчитать стоимость» ----------
+  // Ориентир, ₽ за погонный метр: среднее по конкурентам (Челябинск + обзоры цен по России, ноябрь 2026).
+  // Демо для портфолио — реальные цены уточнить у Дмитрия.
+  const RATES = {
+    kitchen:  { econ: 31000, std: 64000, prem: 94000, min: 100000 },
+    wardrobe: { econ: 25000, std: 33000, prem: 45000, min: 30000 },
+    hall:     { econ: 25000, std: 33000, prem: 45000, min: 25000 },
+  };
+  const MAT_KITCHEN = [
+    { v: 'econ', t: 'Эконом', d: 'ЛДСП или плёнка, стандартная фурнитура' },
+    { v: 'std',  t: 'Стандарт', d: 'МДФ в плёнке или пластик, доводчики' },
+    { v: 'prem', t: 'Премиум', d: 'Эмаль или шпон, премиальная фурнитура' },
+  ];
+  const MAT_CABINET = [
+    { v: 'econ', t: 'Эконом', d: 'ЛДСП, простое наполнение' },
+    { v: 'std',  t: 'Стандарт', d: 'Зеркала или стекло, удобное наполнение' },
+    { v: 'prem', t: 'Премиум', d: 'МДФ эмаль, подсветка, премиальная фурнитура' },
+  ];
+  const STEPS = {
+    type: { q: 'Что нужно?', opts: [
+      { v: 'kitchen', t: 'Кухня', what: 'Кухня' }, { v: 'wardrobe', t: 'Шкаф или гардеробная', what: 'Шкаф / гардеробная', short: '' },
+      { v: 'hall', t: 'Прихожая', what: 'Прихожая' }, { v: 'bath', t: 'Мебель для ванной', what: 'Мебель для ванной' },
+      { v: 'biz', t: 'Мебель для бизнеса', what: 'Мебель для бизнеса' }, { v: 'other', t: 'Другое', what: 'Другое' } ] },
+    layout: { q: 'Какая планировка?', wide: true, opts: [
+      { v: 'line', t: 'Прямая', k: 1 }, { v: 'corner', t: 'Угловая', k: 1.08 }, { v: 'u', t: 'П-образная', k: 1.15 } ] },
+    ksize: { q: 'Какой длины гарнитур?', hint: 'Для угловой и П-образной — сумма всех сторон', opts: [
+      { v: 2.2, t: 'До 2,5 м' }, { v: 3, t: '2,5–3,5 м' }, { v: 4, t: '3,5–4,5 м' }, { v: 5, t: 'Больше 4,5 м' } ] },
+    kind: { q: 'Какой шкаф?', wide: true, opts: [
+      { v: 'kupe', t: 'Шкаф-купе', k: 1 }, { v: 'swing', t: 'Распашной', k: 1 }, { v: 'walk', t: 'Гардеробная', k: 1.15 } ] },
+    wsize: { q: 'Какой ширины?', opts: [
+      { v: 1.2, t: 'До 1,5 м' }, { v: 2, t: '1,5–2,5 м' }, { v: 3, t: '2,5–3,5 м' }, { v: 4, t: 'Больше 3,5 м' } ] },
+    hsize: { q: 'Какой ширины прихожая?', wide: true, opts: [
+      { v: 1.2, t: 'До 1,5 м' }, { v: 2, t: '1,5–2,5 м' }, { v: 3, t: 'Больше 2,5 м' } ] },
+    mat: { q: 'Какие материалы?', wide: true, opts: a => a.type === 'kitchen' ? MAT_KITCHEN : MAT_CABINET },
+    when: { q: 'Когда нужна мебель?', wide: true, opts: [
+      { v: 'soon', t: 'В ближайший месяц' }, { v: 'later', t: 'Через 1–3 месяца' }, { v: 'look', t: 'Пока присматриваюсь' } ] },
+  };
+  const FLOWS = {
+    kitchen: ['type', 'layout', 'ksize', 'mat', 'when'],
+    wardrobe: ['type', 'kind', 'wsize', 'mat', 'when'],
+    hall: ['type', 'hsize', 'mat', 'when'],
+  };
+  const $ = id => document.getElementById(id);
+  const quizWrap = $('quizWrap'), quizResult = $('quizResult'), formWrap = $('formWrap'), formDone = $('formDone');
+  const qStep = $('qStep'), qOpts = $('qOpts'), qNext = $('qNext'), qBack = $('qBack'), qSkip = $('qSkip');
+  let qi = 0, answers = {};
+  const flow = () => FLOWS[answers.type] || ['type', 'when'];
+  const optsOf = key => typeof STEPS[key].opts === 'function' ? STEPS[key].opts(answers) : STEPS[key].opts;
+  const pick = key => optsOf(key).find(o => String(o.v) === String(answers[key]));
+
+  function view(name) {
+    quizWrap.hidden = name !== 'quiz';
+    quizResult.hidden = name !== 'result';
+    formWrap.style.display = name === 'form' ? '' : 'none';
+    formDone.classList.toggle('show', name === 'done');
+  }
+  function updateCount() {  // пока тип мебели не выбран, число шагов неизвестно
+    const n = flow().length;
+    $('qCount').textContent = answers.type ? 'Шаг ' + (qi + 1) + ' из ' + n : 'Шаг 1';
+    $('qBar').style.width = (answers.type ? qi / n * 100 : 0) + '%';
+  }
+  function render(animate) {
+    const steps = flow(), key = steps[qi], step = STEPS[key];
+    $('qQuestion').textContent = step.q;
+    $('qHint').hidden = !step.hint; $('qHint').textContent = step.hint || '';
+    updateCount();
+    qOpts.className = 'q-opts' + (step.wide ? ' wide' : '');
+    qOpts.innerHTML = '';
+    optsOf(key).forEach(o => {
+      const label = document.createElement('label'); label.className = 'q-opt';
+      const input = document.createElement('input'); input.type = 'radio'; input.name = 'q_' + key; input.value = o.v;
+      input.checked = String(answers[key]) === String(o.v);
+      input.addEventListener('change', () => {
+        if (key === 'type' && answers.type !== o.v) answers = {};  // другой тип мебели — другие вопросы
+        answers[key] = o.v; qNext.disabled = false; updateCount();
+      });
+      const box = document.createElement('span'); box.textContent = o.t;
+      if (o.d) { const d = document.createElement('small'); d.textContent = o.d; box.appendChild(d); }
+      label.append(input, box); qOpts.appendChild(label);
+    });
+    qNext.disabled = answers[key] === undefined;
+    qBack.hidden = qi === 0;
+    qSkip.hidden = qi !== 0;
+    if (animate) { qStep.classList.remove('anim'); void qStep.offsetWidth; qStep.classList.add('anim'); }
+  }
+  function nextStep() {
+    const steps = flow();
+    if (answers[steps[qi]] === undefined) return;
+    if (qi === 0) goal('quiz_start');
+    if (qi < steps.length - 1) { qi++; render(true); qStep.focus({ preventScroll: true }); }
+    else showResult();
+  }
+  function estimate() {
+    const r = RATES[answers.type]; if (!r) return null;
+    const size = answers.ksize || answers.wsize || answers.hsize;
+    const k = (pick('layout') || pick('kind') || { k: 1 }).k;
+    const round = x => Math.round(x / 5000) * 5000;
+    const lo = round(Math.max(r.min, r[answers.mat] * size * k));
+    return [lo, round(lo * 1.3)];
+  }
+  function showResult() {
+    const price = estimate(), fmt = n => n.toLocaleString('ru-RU');
+    const summary = flow().map(key => { const o = pick(key) || {}; return o.short !== undefined ? o.short : o.t; }).filter(Boolean).join(' · ');
+    $('qPrice').textContent = price ? fmt(price[0]) + ' – ' + fmt(price[1]) + ' ₽' : 'Рассчитаю индивидуально';
+    $('qSum').textContent = summary.split(' · ').map(s => s.replace(/ /g, ' ')).join(' · '); // пункт сводки переносится целиком
+    $('qNote').textContent = price
+      ? 'Ориентир по средним ценам на мебель на заказ в Челябинске. Точную стоимость назову после бесплатного замера.'
+      : 'Такие проекты считаю по вашим размерам и задаче — оставьте телефон, и я назову цену после разговора.';
+    $('quizField').value = summary + (price ? ' · ориентир ' + fmt(price[0]) + '–' + fmt(price[1]) + ' ₽' : '');
+    view('result'); goal('quiz_done'); $('qToForm').focus({ preventScroll: true });
+  }
+  function toForm(fromQuiz) {
+    $('fTitle').textContent = fromQuiz ? 'Точная цена' : 'Оставить заявку';
+    $('fLead').textContent = fromQuiz
+      ? 'Оставьте телефон — перезвоню в течение часа, уточню детали и назову точную цену.'
+      : 'Оставьте телефон — я перезвоню в течение часа, уточню детали и рассчитаю стоимость бесплатно.';
+    if (!fromQuiz) $('quizField').value = '';
+    const t = STEPS.type.opts.find(o => o.v === answers.type);
+    if (t) form.elements.what.value = t.what;
+    view('form'); form.elements.phone.focus({ preventScroll: true });
+  }
+  function resetQuiz() { qi = 0; answers = {}; render(false); view('quiz'); }
+
+  qNext.addEventListener('click', nextStep);
+  qBack.addEventListener('click', () => { if (qi > 0) { qi--; render(true); qStep.focus({ preventScroll: true }); } });
+  // мышь и палец: выбор сразу ведёт дальше; клавиатура — стрелками выбрать, «Далее» подтвердить
+  let advT;
+  qOpts.addEventListener('click', e => { if (e.detail > 0 && e.target.closest('.q-opt')) { clearTimeout(advT); advT = setTimeout(nextStep, 220); } });
+  qOpts.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); nextStep(); } });
+  qSkip.addEventListener('click', () => toForm(false));
+  $('qToForm').addEventListener('click', () => toForm(true));
+  $('qRestart').addEventListener('click', resetQuiz);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('open')) close(); });
+  resetQuiz();
+
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    msg.className = 'form-msg'; msg.textContent = '';
+    if (phoneEl.value.replace(/\D/g, '').length < 11) { msg.className = 'form-msg err'; msg.textContent = 'Проверьте номер телефона'; phoneEl.focus(); return; }
+    if (!form.elements.consent.checked) { msg.className = 'form-msg err'; msg.textContent = 'Нужно согласие на обработку данных'; return; }
+    const btn = form.querySelector('button[type=submit]'); btn.disabled = true; msg.textContent = 'Отправляю…';
+    try {
+      if (DEMO) {
+        await new Promise(r => setTimeout(r, 700));
+        document.getElementById('demoNote').hidden = false;
+      } else {
+        const res = await fetch('send.php', { method: 'POST', body: new FormData(form) });
+        const data = await res.json();
+        if (!data.ok) throw new Error(data.error || 'fail');
+      }
+      goal('lead');
+      form.reset();
+      view('done');
+    } catch (err) {
+      msg.className = 'form-msg err';
+      msg.innerHTML = 'Не получилось отправить. Позвоните <a href="tel:+79507291818" style="color:inherit">+7 (950) 729-18-18</a> или напишите ВКонтакте.';
+    } finally { btn.disabled = false; }
+  });
+  document.getElementById('doneBtn').addEventListener('click', () => {
+    close();
+    setTimeout(() => { resetQuiz(); msg.textContent = ''; }, 400);
+  });
+  modal.addEventListener('click', e => { if (e.target === modal) close(); });
+  // Галерея по направлениям
+  const types = document.querySelectorAll('.type');
+  types.forEach(btn => btn.addEventListener('click', () => {
+    const g = document.getElementById(btn.dataset.target);
+    const wasOpen = g.classList.contains('open');
+    types.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-expanded','false'); });
+    document.querySelectorAll('.gallery').forEach(x => x.classList.remove('open'));
+    if (!wasOpen) {
+      btn.classList.add('active'); btn.setAttribute('aria-expanded','true');
+      g.classList.add('open');
+      setTimeout(() => {
+        const r = g.getBoundingClientRect();
+        if (r.bottom > innerHeight) window.scrollBy({ top: Math.min(r.top - 90, r.bottom - innerHeight + 30), behavior: 'smooth' });
+      }, 350);
+    }
+  }));
+  document.querySelectorAll('.gal').forEach(gal => { if (gal.children.length > 3) gal.classList.add('many'); gal.dataset.n = gal.children.length; });
+
+  // Просмотр фото на весь экран
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCount = document.getElementById('lbCount');
+  let list = [], idx = 0;
+  const show = () => { lbImg.src = list[idx].src; lbImg.alt = list[idx].alt; lbCount.textContent = (idx + 1) + ' / ' + list.length;
+    lb.querySelector('.lb-prev').style.display = lb.querySelector('.lb-next').style.display = list.length > 1 ? '' : 'none'; };
+  const lbClose = () => lb.classList.remove('open');
+  const step = d => { idx = (idx + d + list.length) % list.length; show(); };
+  document.querySelectorAll('.gal figure, .ba-grid figure, .rv-photos figure').forEach(f => f.addEventListener('click', () => {
+    list = [...f.parentElement.querySelectorAll('img')]; idx = list.indexOf(f.querySelector('img')); show(); lb.classList.add('open');
+  }));
+  lb.querySelector('.lb-close').addEventListener('click', lbClose);
+  lb.querySelector('.lb-prev').addEventListener('click', e => { e.stopPropagation(); step(-1); });
+  lb.querySelector('.lb-next').addEventListener('click', e => { e.stopPropagation(); step(1); });
+  lb.addEventListener('click', e => { if (e.target === lb) lbClose(); });
+  let tx = null;
+  lb.addEventListener('touchstart', e => tx = e.touches[0].clientX, { passive: true });
+  lb.addEventListener('touchend', e => { if (tx === null) return; const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 40) step(dx < 0 ? 1 : -1); tx = null; });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { close(); lbClose(); }
+    if (lb.classList.contains('open')) { if (e.key === 'ArrowRight') step(1); if (e.key === 'ArrowLeft') step(-1); }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ракета — механика, которую видно насквозь (концепт)</title>
+<meta name="description" content="Концепт промо-страницы механических часов «Ракета»: часы разбираются на слои прямо на экране.">
+<link rel="preload" href="fonts/unbounded-cyrillic-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="#">Ракета</a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#scene">Механика</a>
+    <a href="#how">Как это работает</a>
+  </nav>
+  <a class="btn btn-small" href="#cta">Выбрать часы</a>
+</header>
+
+<main>
+  <section class="scene" id="scene" aria-label="Часы в разборе">
+    <div class="stage">
+      <p class="bg-word" aria-hidden="true">МЕХАНИКА</p>
+
+      <div class="intro">
+        <h1>Механика, которую видно насквозь</h1>
+        <p>Часы «Ракета» делают на Петродворцовом часовом заводе в Санкт-Петербурге. Завод работает с 1721 года.</p>
+        <p class="hint" aria-hidden="true">Прокрутите — часы разберутся на слои</p>
+      </div>
+
+      <div class="watch-wrap">
+        <div class="watch" id="watch">
+          <div class="layer" style="--z:-2"><svg viewBox="0 0 400 400" id="svg-case" aria-hidden="true"></svg></div>
+          <div class="layer" style="--z:-1"><svg viewBox="0 0 400 400" id="svg-move" aria-hidden="true"></svg></div>
+          <div class="layer" style="--z:0"><svg viewBox="0 0 400 400" id="svg-dial" role="img" aria-label="Циферблат показывает текущее время"></svg></div>
+          <div class="layer" style="--z:1"><svg viewBox="0 0 400 400" id="svg-hands" aria-hidden="true"></svg></div>
+          <div class="layer glass" style="--z:2"></div>
+        </div>
+      </div>
+
+      <ul class="parts" id="parts">
+        <li style="--i:0"><b>Стекло</b><span>Защищает циферблат</span></li>
+        <li style="--i:1"><b>Стрелки</b><span>Показывают время — настоящее, ваше</span></li>
+        <li style="--i:2"><b>Циферблат</b><span>Лицо часов</span></li>
+        <li style="--i:3"><b>Механизм</b><span>Колёса, пружина и баланс</span></li>
+        <li style="--i:4"><b>Корпус</b><span>Держит всё вместе</span></li>
+      </ul>
+
+      <p class="outro">Ни одной батарейки. Только пружина, колёса — и&nbsp;ваша рука.</p>
+      <div class="progress" aria-hidden="true"><span id="bar"></span></div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <h2>Как работает механика</h2>
+    <p class="lead">Пять деталей передают энергию друг другу — от вашей руки до стрелок.</p>
+    <ol class="steps">
+      <li><i class="g" aria-hidden="true"></i><b>Завод</b><span>Вы вращаете заводную головку — и энергия уходит внутрь.</span></li>
+      <li><i class="g" aria-hidden="true"></i><b>Пружина</b><span>Заводная пружина закручивается и копит энергию.</span></li>
+      <li><i class="g" aria-hidden="true"></i><b>Колёса</b><span>Пружина медленно раскручивается и вращает колёсную передачу.</span></li>
+      <li><i class="g" aria-hidden="true"></i><b>Баланс</b><span>Спуск и баланс делят ход на равные доли — отсюда «тик‑так».</span></li>
+      <li><i class="g" aria-hidden="true"></i><b>Стрелки</b><span>Колёса передают ход стрелкам — и вы видите время.</span></li>
+    </ol>
+  </section>
+
+  <section class="statement">
+    <p id="statement">Время, которое заводится от&nbsp;вашей руки.</p>
+  </section>
+
+  <section class="cta" id="cta">
+    <div class="sweep" aria-hidden="true"><span></span></div>
+    <h2>Выберите свои часы</h2>
+    <p>Механика «Ракеты» — на руке, а не на экране.</p>
+    <a class="btn" href="#">Смотреть модели</a>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Концепт-сайт для портфолио студии. Не официальный сайт бренда «Ракета».</p>
+</footer>
+
+<script src="anime.umd.min.js"></script>
+<script src="watch.js"></script>
+</body>
+</html>

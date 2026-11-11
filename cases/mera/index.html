@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ДЕМО для портфолио студии: клиника «Мера» вымышленная. Концепция — ../концепция.md, направление «Разметка» (выбор Вики 08.11).
+     Первый экран — композиция «обложка журнала» (правка Вики 08.11: не повторять сплит «текст слева — картинка справа»). -->
+<title>Эстетическая медицина в Казани — клиника «Мера» (демо)</title>
+<meta name="description" content="Клиника эстетической медицины в Казани: врач размечает лицо и объясняет план до процедуры, консультант отвечает на вопросы даже ночью. Демо-версия.">
+<meta name="theme-color" content="#EEEFED">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Клиника «Мера» — ровно столько, сколько нужно вашему лицу">
+<meta property="og:description" content="Демо сайта клиники эстетической медицины с ИИ-консультантом.">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/prata-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/geologica-cyrillic-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p class="demo-strip">Демо-версия: клиника вымышленная<span class="desk">, запись никуда не отправляется</span> <button type="button" class="strip-owner" data-owner>Глазами клиники</button></p>
+
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Клиника «Мера», на главную">
+    <span class="brand-name">Мера</span>
+    <span class="brand-note">эстетическая медицина</span>
+  </a>
+  <nav class="nav" aria-label="Разделы">
+    <a href="#zones">Процедуры</a>
+    <a href="#doctors">Врачи</a>
+    <a href="#prices">Цены</a>
+    <a href="#faq">Вопросы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <button class="owner-toggle" type="button" data-owner aria-controls="owner" aria-expanded="false">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3"/></svg>
+  Глазами клиники
+</button>
+  <a class="header-phone" href="tel:+78430000000" aria-label="Позвонить в клинику">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h2.6l1.4 4-1.9 1.3a12 12 0 0 0 6.5 6.5l1.3-1.9 4 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2Z"/></svg>
+    <span>+7 (843) 000-00-00</span>
+  </a>
+  <button class="btn btn-small js-book" type="button">Записаться</button>
+</header>
+
+<main id="top">
+  <!-- Обложка: фигура вырезана и стоит прямо на фоне страницы (правка Вики 08.11: «женщина не вписывается»),
+       «Ме · ра» уходит за голову, заголовок лежит на свитере, свитер перетекает в чёрную полосу с консультантом -->
+  <section class="cover">
+    <div class="cover-stage">
+      <p class="word word-l" aria-hidden="true">Ме</p>
+      <p class="word word-r" aria-hidden="true">ра</p>
+
+      <figure class="face" id="face">
+        <div class="face-box">
+          <img src="img/hero-cut.webp" srcset="img/hero-cut-680.webp 680w, img/hero-cut.webp 1360w" sizes="(min-width: 900px) 840px, 116vw" width="1360" height="1500" alt="Портрет женщины в фас: на лице фиолетовым маркером намечены линии и точки, как перед процедурой" fetchpriority="high">
+          <svg class="marks" viewBox="-80 0 1360 1500" aria-hidden="true">
+            <defs>
+              <mask id="mk-jl"><path class="reveal-path" pathLength="1" style="--d:.35s" d="M484 776 C 520 870 600 925 694 944"/></mask>
+              <mask id="mk-jr"><path class="reveal-path" pathLength="1" style="--d:.45s" d="M892 776 C 860 870 800 925 716 944"/></mask>
+              <mask id="mk-cl"><path class="reveal-path" pathLength="1" style="--d:.15s" d="M498 668 C 535 690 570 708 606 716"/></mask>
+              <mask id="mk-cr"><path class="reveal-path" pathLength="1" style="--d:.25s" d="M884 664 C 850 688 820 706 790 716"/></mask>
+            </defs>
+            <!-- овал: пунктир по нижней челюсти -->
+            <path class="mk mk-dash" mask="url(#mk-jl)" d="M484 776 C 520 870 600 925 694 944"/>
+            <path class="mk mk-dash" mask="url(#mk-jr)" d="M892 776 C 860 870 800 925 716 944"/>
+            <!-- скулы -->
+            <path class="mk mk-dash" mask="url(#mk-cl)" d="M498 668 C 535 690 570 708 606 716"/>
+            <path class="mk mk-dash" mask="url(#mk-cr)" d="M884 664 C 850 688 820 706 790 716"/>
+            <!-- межбровье -->
+            <circle class="mk-dot" style="--d:.55s" cx="676" cy="512" r="6"/>
+            <circle class="mk-dot" style="--d:.6s" cx="722" cy="512" r="6"/>
+            <!-- лоб -->
+            <circle class="mk-dot" style="--d:.7s" cx="606" cy="420" r="5.5"/>
+            <circle class="mk-dot" style="--d:.74s" cx="664" cy="410" r="5.5"/>
+            <circle class="mk-dot" style="--d:.78s" cx="734" cy="410" r="5.5"/>
+            <circle class="mk-dot" style="--d:.82s" cx="792" cy="420" r="5.5"/>
+          </svg>
+          <button type="button" class="pin pin-r" style="--x:64.12%;--y:27.4%" data-q="Морщины на лбу">Лоб</button>
+          <button type="button" class="pin pin-l" style="--x:57.28%;--y:31.9%" data-q="Морщины между бровями">Межбровье</button>
+          <button type="button" class="pin pin-r" style="--x:69.85%;--y:44.8%" data-q="Хочу подчеркнуть скулы">Скулы</button>
+          <button type="button" class="pin pin-l" style="--x:41.62%;--y:54%" data-q="Хочу более чёткий овал лица">Овал</button>
+        </div>
+      </figure>
+    </div>
+
+    <h1 class="cover-title">Ровно столько, сколько нужно вашему лицу</h1>
+
+    <p class="side side-l">Клиника эстетической медицины в Казани. Перед процедурой врач размечает лицо и объясняет план — без лишнего и без давления.</p>
+
+    <div class="side side-r">
+      <p>Нажмите на зону лица — консультант расскажет, что с ней можно сделать. Отвечает сразу, даже ночью.</p>
+      <button class="btn js-book" type="button">Записаться на консультацию</button>
+      <p class="warning">Имеются противопоказания. Необходима консультация специалиста.</p>
+    </div>
+
+    <div class="cover-band">
+      <form class="ask" id="ask" autocomplete="off" data-mode="demo">
+        <div class="ask-row">
+          <label class="visually-hidden" for="ask-input">Что хотите изменить?</label>
+          <span class="pulse" aria-hidden="true"></span>
+          <input id="ask-input" name="q" type="text" placeholder="Что хотите изменить? Например, морщины между бровями" enterkeyhint="send">
+          <button class="ask-send" type="submit" aria-label="Спросить консультанта">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+        <div class="chips" role="list">
+          <button type="button" class="chip" data-q="Морщины между бровями">Морщины между бровями</button>
+          <button type="button" class="chip" data-q="Пигментные пятна">Пигментные пятна</button>
+          <button type="button" class="chip" data-q="Акне и следы после него">Акне и следы</button>
+          <button type="button" class="chip" data-q="Хочу более чёткий овал лица">Овал лица</button>
+          <button type="button" class="chip" data-q="У меня свадьба через месяц, что можно успеть?">Событие через месяц</button>
+          <button type="button" class="chip" data-q="Не знаю, с чего начать">Не знаю, с чего начать</button>
+        </div>
+        <p class="ask-note">ИИ-помощник, не врач. В демо ответы заготовлены. Фото иллюстративное.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- С чем приходят: оглавление журнала — зона крупно, что обычно помогает, кнопка к консультанту -->
+  <section class="sec zones" id="zones">
+    <div class="sec-head">
+      <h2>С чем к нам приходят</h2>
+      <p class="sec-lead">Названия процедур знать не нужно. Выберите, что беспокоит, — расскажем, что обычно помогает. Точно скажет врач на консультации.</p>
+    </div>
+    <ol class="index" role="list">
+      <li><button type="button" class="index-row" data-q="Морщины между бровями и на лбу"><span class="index-name">Межбровье и лоб</span><span class="index-text">Мимические морщины. Обычно — ботулинотерапия.</span><span class="index-go">Спросить</span></button></li>
+      <li><button type="button" class="index-row" data-q="Морщины вокруг глаз"><span class="index-name">Вокруг глаз</span><span class="index-text">Мелкие морщинки, тонкая сухая кожа. Ботулинотерапия, увлажняющие уколы.</span><span class="index-go">Спросить</span></button></li>
+      <li><button type="button" class="index-row" data-q="Носогубные складки"><span class="index-name">Носогубные складки</span><span class="index-text">Складки от носа к уголкам губ. Контурная пластика, аппаратный лифтинг.</span><span class="index-go">Спросить</span></button></li>
+      <li><button type="button" class="index-row" data-q="Хочу более чёткий овал лица"><span class="index-name">Скулы и овал</span><span class="index-text">Нечёткий контур лица. Ультразвуковой SMAS-лифтинг, контурная пластика.</span><span class="index-go">Спросить</span></button></li>
+      <li><button type="button" class="index-row" data-q="Губы"><span class="index-name">Губы</span><span class="index-text">Объём и чёткий контур — без «перекачанности». Контурная пластика губ.</span><span class="index-go">Спросить</span></button></li>
+      <li><button type="button" class="index-row" data-q="Кожа: пятна, следы акне, сухость"><span class="index-name">Кожа целиком</span><span class="index-text">Пятна, следы акне, сухость, тусклый цвет. Пилинги, лазер, биоревитализация.</span><span class="index-go">Спросить</span></button></li>
+    </ol>
+  </section>
+
+  <!-- Процедуры и цены: вкладки по направлениям -->
+  <section class="sec procs" id="prices">
+    <div class="sec-head">
+      <h2>Процедуры и цены</h2>
+      <p class="sec-lead">Цена «от» — за одну процедуру. Точную стоимость врач назовёт после осмотра, до начала процедуры.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Направления">
+      <button type="button" role="tab" id="t-care" aria-controls="p-care" aria-selected="true">Уход и чистки</button>
+      <button type="button" role="tab" id="t-peel" aria-controls="p-peel" aria-selected="false" tabindex="-1">Пилинги</button>
+      <button type="button" role="tab" id="t-tech" aria-controls="p-tech" aria-selected="false" tabindex="-1">Аппаратные</button>
+      <button type="button" role="tab" id="t-inj" aria-controls="p-inj" aria-selected="false" tabindex="-1">Уколы</button>
+    </div>
+    <div class="proc-head" aria-hidden="true"><span>Процедура</span><span>Сколько раз</span><span>Восстановление</span><span>Цена</span></div>
+    <div class="panel" role="tabpanel" id="p-care" aria-labelledby="t-care">
+      <div class="proc"><div class="proc-name"><h3>Консультация врача</h3><p>Осмотр, план и цена до начала процедур</p></div><p class="proc-n" data-k="Сколько раз">30 минут</p><p class="proc-r" data-k="Восстановление">—</p><p class="proc-p" data-k="Цена">по прайсу</p><button type="button" class="proc-ask" data-q="Как проходит консультация">Спросить</button></div>
+      <div class="proc"><div class="proc-name"><h3>Чистка лица</h3><p>Очищает поры, выравнивает рельеф</p></div><p class="proc-n" data-k="Сколько раз">по необходимости</p><p class="proc-r" data-k="Восстановление">покраснение до суток</p><p class="proc-p" data-k="Цена">по прайсу</p><button type="button" class="proc-ask" data-q="Чистка лица">Спросить</button></div>
+      <div class="proc"><div class="proc-name"><h3>Уход по типу кожи</h3><p>Увлажнение, питание, успокоение</p></div><p class="proc-n" data-k="Сколько раз">курс по плану врача</p><p class="proc-r" data-k="Восстановление">не нужно</p><p class="proc-p" data-k="Цена">по прайсу</p><button type="button" class="proc-ask" data-q="Уходовые процедуры">Спросить</button></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p-peel" aria-labelledby="t-peel" hidden>
+      <div class="proc"><div class="proc-name"><h3>Поверхностный пилинг</h3><p>Обновляет верхний слой, выравнивает тон</p></div><p class="proc-n" data-k="Сколько раз">обычно 4–6</p><p class="proc-r" data-k="Восстановление">лёгкое шелушение 1–3 дня</p><p class="proc-p" data-k="Цена">по прайсу</p><button type="button" class="proc-ask" data-q="Пилинг">Спросить</button></div>
+      <div class="proc"><div class="proc-name"><h3>Срединный пилинг</h3><p>Пятна и неглубокие следы акне</p></div><p class="proc-n" data-k="Сколько раз">обычно 1–3</p><p class="proc-r" data-k="Восстановление">шелушение до недели</p><p class="proc-p" data-k="Цена">по прайсу</p><button type="button" class="proc-ask" data-q="Срединный пилинг от пятен">Спросить</button></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p-tech" aria-labelledby="t-tech" hidden>
+      <div class="proc"><div class="proc-name"><h3>Ультразвуковой SMAS-лифтинг</h3><p>Подтягивает глубокий слой, чёткий овал</p></div><p class="proc-n" data-k="Сколько раз">обычно 1 раз в год</p><p class="proc-r" data-k="Восстановление">обычно не нужно</p><p class="proc-p" data-k="Цена">по прайсу</p><button type="button" class="proc-ask" data-q="SMAS-лифтинг">Спросить</button></div>
+      <div class="proc"><div class="proc-name"><h3>Фотоомоложение</h3><p>Пигмент, сосудистые звёздочки, ровный тон</p></div><p class="proc-n" data-k="Сколько раз">обычно 3–5</p><p class="proc-r" data-k="Восстановление">покраснение 1–2 дня</p><p class="proc-p" data-k="Цена">по прайсу</p><button type="button" class="proc-ask" data-q="Фотоомоложение">Спросить</button></div>
+      <div class="proc"><div class="proc-name"><h3>Лазерная шлифовка</h3><p>Рельеф, следы акне, мелкие морщины</p></div><p class="proc-n" data-k="Сколько раз">обычно 2–4</p><p class="proc-r" data-k="Восстановление">покраснение до недели</p><p class="proc-p" data-k="Цена">по прайсу</p><button type="button" class="proc-ask" data-q="Лазерная шлифовка">Спросить</button></div>
+    </div>
+    <div class="panel" role="tabpanel" id="p-inj" aria-labelledby="t-inj" hidden>
+      <div class="proc"><div class="proc-name"><h3>Ботулинотерапия</h3><p>Мимические морщины: лоб, межбровье, вокруг глаз</p></div><p class="proc-n" data-k="Сколько раз">обычно раз в несколько месяцев</p><p class="proc-r" data-k="Восстановление">обычно не нужно</p><p class="proc-p" data-k="Цена">по прайсу</p><button type="button" class="proc-ask" data-q="Ботулинотерапия">Спросить</button></div>
+      <div class="proc"><div class="proc-name"><h3>Контурная пластика</h3><p>Объём: губы, скулы, носогубные складки</p></div><p class="proc-n" data-k="Сколько раз">обычно раз в полгода–год</p><p class="proc-r" data-k="Восстановление">отёк несколько дней</p><p class="proc-p" data-k="Цена">по прайсу</p><button type="button" class="proc-ask" data-q="Контурная пластика">Спросить</button></div>
+      <div class="proc"><div class="proc-name"><h3>Биоревитализация</h3><p>Глубокое увлажнение кожи</p></div><p class="proc-n" data-k="Сколько раз">обычно 2–4</p><p class="proc-r" data-k="Восстановление">бугорки на коже 1–2 дня</p><p class="proc-p" data-k="Цена">по прайсу</p><button type="button" class="proc-ask" data-q="Биоревитализация">Спросить</button></div>
+    </div>
+    <p class="fine">Цены в демо не указаны — у реальной клиники здесь её прайс. Информация на сайте не является публичной офертой. Имеются противопоказания. Необходима консультация специалиста.</p>
+  </section>
+
+  <!-- Первая консультация: настоящая последовательность — номера уместны -->
+  <section class="sec visit" id="visit">
+    <div class="visit-top">
+      <h2>Как проходит первая консультация</h2>
+      <figure class="detail" aria-hidden="true">
+        <div class="detail-box">
+          <img src="img/hero-bw.webp" width="1200" height="1500" alt="" loading="lazy">
+          <svg viewBox="0 0 1200 1500">
+            <g fill="#5B3FA6"><circle cx="676" cy="512" r="6"/><circle cx="722" cy="512" r="6"/><circle cx="606" cy="420" r="5.5"/><circle cx="664" cy="410" r="5.5"/><circle cx="734" cy="410" r="5.5"/><circle cx="792" cy="420" r="5.5"/></g>
+            <g fill="none" stroke="#5B3FA6" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 14"><path d="M520 548 C 560 520 610 512 648 522"/><path d="M752 522 C 790 510 840 516 880 544"/></g>
+          </svg>
+        </div>
+      </figure>
+    </div>
+    <ol class="steps">
+      <li><span class="step-n" aria-hidden="true">1</span><h3>Запись</h3><p>Через консультанта на сайте или по телефону. Администратор подтвердит время.</p></li>
+      <li><span class="step-n" aria-hidden="true">2</span><h3>Осмотр</h3><p>Врач смотрит кожу при хорошем свете, спрашивает о здоровье, лекарствах и прошлых процедурах.</p></li>
+      <li><span class="step-n" aria-hidden="true">3</span><h3>Разметка и план</h3><p>Намечает зоны маркером и объясняет: что делать, в каком порядке и сколько это стоит.</p></li>
+      <li><span class="step-n" aria-hidden="true">4</span><h3>Решение за вами</h3><p>Можно сделать процедуру сразу или взять план домой и подумать.</p></li>
+    </ol>
+    <button class="btn js-book" type="button">Записаться на консультацию</button>
+  </section>
+
+  <!-- Врачи: без выдуманных людей — требования и честная пометка про демо -->
+  <section class="sec doctors" id="doctors">
+    <h2 class="statement">Уколы, пилинги и аппаратные процедуры делают только врачи</h2>
+    <div class="doctors-body">
+      <ul class="marked" role="list">
+        <li>Высшее медицинское образование</li>
+        <li>Ординатура по дерматовенерологии</li>
+        <li>Сертификат по косметологии и регулярное повышение квалификации</li>
+      </ul>
+      <p class="muted">В демо-версии профилей нет: у реальной клиники здесь фото врачей, образование, стаж и номера сертификатов, которые можно проверить.</p>
+    </div>
+  </section>
+
+  <!-- Честность: когда отложим и когда отговорим -->
+  <section class="sec honest" id="honest">
+    <h2><span class="underlined">Когда мы скажем «не сейчас»</span></h2>
+    <div class="honest-cols">
+      <div>
+        <h3>Отложим процедуру</h3>
+        <ul class="dash" role="list">
+          <li>Беременность и кормление грудью</li>
+          <li>Воспаление, герпес или ранка в зоне процедуры</li>
+          <li>Простуда, температура, обострение хронической болезни</li>
+          <li>Свежий загар — перед пилингом и лазером</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Отговорим</h3>
+        <ul class="dash" role="list">
+          <li>Если процедура не решит вашу задачу</li>
+          <li>Если «ещё немного» уже будет заметно</li>
+          <li>Если хотите «как на фото», а вашему лицу это не подойдёт</li>
+        </ul>
+      </div>
+    </div>
+    <p class="muted">Противопоказания у каждой процедуры свои — их разбирает врач на консультации.</p>
+  </section>
+
+  <!-- Вопросы -->
+  <section class="sec faq" id="faq">
+    <h2>Вопросы</h2>
+    <div class="faq-list">
+      <details><summary>Больно ли?</summary><div><p>Большинство процедур переносятся спокойно. Перед уколами наносят крем с обезболивающим, иглы тонкие. Чего ждать именно вам, врач расскажет заранее.</p><button type="button" class="link-ask" data-q="Больно ли?">Спросить консультанта</button></div></details>
+      <details><summary>Когда будет виден результат?</summary><div><p>Зависит от процедуры: после контурной пластики — сразу, после ботулинотерапии — через несколько дней, после лифтинга результат нарастает 2–3 месяца.</p><button type="button" class="link-ask" data-q="Когда будет результат?">Спросить консультанта</button></div></details>
+      <details><summary>Не будет ли заметно, что я что-то сделала?</summary><div><p>Наша задача — чтобы вас спрашивали, выспались ли вы, а не что сделали. Врач подбирает объём аккуратно и, если нужно, добавляет на контрольном визите, а не сразу «с запасом».</p><button type="button" class="link-ask" data-q="Хочу естественный результат">Спросить консультанта</button></div></details>
+      <details><summary>Можно ли делать процедуры летом?</summary><div><p>Многие — да. Пилинги и лазер обычно переносят на осень и зиму, а летом нужен солнцезащитный крем.</p><button type="button" class="link-ask" data-q="Можно ли летом?">Спросить консультанта</button></div></details>
+      <details><summary>Что взять с собой на консультацию?</summary><div><p>Список лекарств, которые принимаете, и названия процедур, которые делали раньше. Приходите без макияжа или с лёгким.</p><button type="button" class="link-ask" data-q="Как подготовиться к консультации">Спросить консультанта</button></div></details>
+      <details><summary>Можно записаться сразу на процедуру, без консультации?</summary><div><p>На уход — да. На уколы, пилинги и аппаратные процедуры — только после консультации: врач проверит противопоказания.</p><button type="button" class="link-ask" data-q="Записаться на консультацию">Записаться</button></div></details>
+    </div>
+  </section>
+
+  <!-- Записаться: адрес крупно + условная схема -->
+  <section class="sec contacts" id="contacts">
+    <div class="contacts-text">
+      <h2>Записаться</h2>
+      <p class="address">Казань, ул.&nbsp;Примерная,&nbsp;1</p>
+      <dl class="contacts-dl">
+        <div><dt>Часы</dt><dd>Каждый день, 9:00–21:00</dd></div>
+        <div><dt>Телефон</dt><dd><a href="tel:+78430000000">+7 (843) 000-00-00</a></dd></div>
+        <div><dt>Парковка</dt><dd>Во дворе, для гостей клиники</dd></div>
+      </dl>
+      <p class="muted">Адрес, телефон и парковка — демо: клиника вымышленная.</p>
+      <div class="contacts-btns">
+        <button class="btn js-book" type="button">Записаться через консультанта</button>
+        <a class="btn btn-line" href="tel:+78430000000">Позвонить</a>
+      </div>
+    </div>
+    <figure class="map" aria-label="Условная схема проезда">
+      <svg viewBox="0 0 600 440" role="img" aria-label="Схема: клиника на углу двух улиц, рядом парковка">
+        <rect width="600" height="440" fill="#E4E5E2"/>
+        <g fill="none" stroke="#F8F8F6" stroke-linecap="round">
+          <path d="M-20 300 C 140 280 260 300 620 250" stroke-width="34"/>
+          <path d="M210 -20 C 230 120 250 300 230 460" stroke-width="26"/>
+          <path d="M-20 110 L 620 80" stroke-width="14"/>
+          <path d="M440 -20 L 470 460" stroke-width="14"/>
+        </g>
+        <g fill="#D5D6D3"><rect x="40" y="140" width="120" height="110" rx="6"/><rect x="290" y="120" width="120" height="100" rx="6"/><rect x="290" y="330" width="130" height="90" rx="6"/><rect x="500" y="130" width="90" height="90" rx="6"/></g>
+        <rect x="304" y="232" width="112" height="44" rx="6" fill="none" stroke="#5B3FA6" stroke-width="2" stroke-dasharray="3 7" stroke-linecap="round"/>
+        <text x="360" y="259" text-anchor="middle" font-size="14" fill="#52575E" font-family="Geologica, sans-serif">парковка</text>
+        <circle cx="262" cy="244" r="16" fill="#5B3FA6"/><circle cx="262" cy="244" r="30" fill="none" stroke="#5B3FA6" stroke-opacity=".3" stroke-width="2"/>
+        <text x="262" y="200" text-anchor="middle" font-size="22" fill="#1F2226" font-family="Prata, serif">Мера</text>
+      </svg>
+      <figcaption>Схема условная — у реальной клиники здесь карта.</figcaption>
+    </figure>
+  </section>
+</main>
+
+<footer class="site-footer" id="info">
+  <div class="foot-brand">
+    <span class="brand-name">Мера</span>
+    <p>Клиника эстетической медицины. Казань, ул. Примерная, 1.</p>
+  </div>
+  <div class="foot-info">
+    <h2 class="foot-h">Сведения о клинике</h2>
+    <p>ООО «Мера» — демо: организация вымышленная, ИНН и ОГРН указываются у реальной клиники.</p>
+    <p>Лицензия на медицинскую деятельность № — демо (у реальной клиники: номер, дата, кем выдана, ссылка на реестр).</p>
+    <p>Контролирующие органы — Росздравнадзор и Роспотребнадзор: у реальной клиники здесь адреса и телефоны управлений.</p>
+  </div>
+  <div class="foot-legal">
+    <p class="foot-warn">Имеются противопоказания. Необходима консультация специалиста.</p>
+    <p>Информация на сайте не является публичной офертой.</p>
+    <p><a href="privacy.html">Политика обработки данных</a><br><a href="consent.html">Согласие на обработку персональных данных</a></p>
+    <p>Демо-сайт для портфолио: <a href="https://t.me/vasyntx" target="_blank" rel="noopener">Виктория Вязимова</a></p>
+  </div>
+</footer>
+
+<!-- «Глазами клиники»: что видит владелец (витрина автоматизаций для портфолио) -->
+
+<aside class="owner" id="owner" aria-label="Глазами клиники: что видит владелец" aria-hidden="true">
+  <header class="owner-head">
+    <div>
+      <p class="owner-title">Глазами клиники</p>
+      <p class="owner-sub">Что видит владелец, пока сайт работает. Пример: данные вымышленные.</p>
+    </div>
+    <button class="owner-close" type="button" aria-label="Закрыть">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </header>
+  <div class="owner-body">
+    <section class="o-block">
+      <h3>Уведомление администратору</h3>
+      <div class="o-push"><p class="o-push-top"><span>Мера · сайт</span><span>сейчас</span></p><p id="o-push-text">Новая запись: консультация, чт 16:00. Откройте журнал записей.</p></div>
+      <p class="o-note">Без имени и телефона: заявка сначала сохраняется на российском сервере клиники, в мессенджер уходит только сигнал.</p>
+    </section>
+    <section class="o-block">
+      <h3>Журнал записей</h3>
+      <ul class="o-journal" id="o-journal" role="list">
+        <li><span>чт 16:00</span><span>Консультация</span><span>Е. К.</span><b class="st st-new">Новая</b></li>
+        <li><span>сб 10:30</span><span>Биоревитализация</span><span>М. С.</span><b class="st st-ok">Подтверждена</b></li>
+        <li><span>ср 10:00</span><span>Чистка лица</span><span>А. Р.</span><b class="st st-done">Пришла</b></li>
+      </ul>
+    </section>
+    <section class="o-block">
+      <h3>Вопросы этой ночью</h3>
+      <ul class="o-night" role="list">
+        <li><time>01:12</time><p>«Можно ботокс, если я кормлю?» <span>Объяснил, что не делаем, предложил консультацию.</span></p></li>
+        <li><time>02:40</time><p>«Сколько держится биоревитализация?» <span>Ответил по памятке клиники.</span></p></li>
+        <li><time>06:05</time><p>«Есть парковка?» <span>Ответил и записал на пт 11:00.</span></p></li>
+      </ul>
+    </section>
+    <section class="o-block">
+      <h3>Напоминание пациенту за день</h3>
+      <p class="o-msg">Завтра в 11:00 консультация в клинике «Мера». Приходите без макияжа или с лёгким, возьмите список лекарств. Казань, ул. Примерная, 1.</p>
+    </section>
+    <p class="o-cta">Эти автоматизации студия подключает к сайту клиники. <a href="https://t.me/vasyntx" target="_blank" rel="noopener">Хочу такой сайт</a></p>
+  </div>
+</aside>
+<p class="toast" id="toast" role="status" hidden></p>
+
+<!-- Окно консультанта: справа на компьютере, во весь экран на телефоне -->
+<aside class="chat" id="chat" aria-label="Консультант клиники" aria-hidden="true">
+  <header class="chat-head">
+    <div>
+      <p class="chat-title"><span class="pulse" aria-hidden="true"></span>Консультант клиники «Мера»</p>
+      <p class="chat-sub">ИИ-помощник, не врач. Не пишите здесь подробности о здоровье — их обсудим на консультации.</p>
+    </div>
+    <button class="chat-close" type="button" aria-label="Свернуть консультанта">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </header>
+  <div class="chat-log" id="chat-log" role="log" aria-live="polite"></div>
+  <form class="chat-form" id="chat-form" autocomplete="off" data-mode="demo">
+    <label class="visually-hidden" for="chat-input">Ваш вопрос</label>
+    <input id="chat-input" type="text" placeholder="Напишите вопрос" enterkeyhint="send">
+    <button class="ask-send" type="submit" aria-label="Отправить">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+    </button>
+  </form>
+  <button class="chat-human" type="button" data-q="Передайте администратору">Передать администратору</button>
+</aside>
+
+<nav class="mob-bar" aria-label="Быстрые действия">
+  <button type="button" class="mob-ask">Спросить</button>
+  <button type="button" class="mob-book js-book">Записаться</button>
+</nav>
+
+<script src="main.js"></script>
+</body>
+</html>
